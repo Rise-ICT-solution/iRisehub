@@ -1,0 +1,136 @@
+import iRisehubLogo from "../Images/iRisehubLogo.png"
+// import { FaBarsStaggered } from "react-icons/fa6";
+import iRisehubVideo from "../Video/iRisehubIntro.mp4"
+import { MdOutlineClose } from "react-icons/md";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { BsTwitterX } from "react-icons/bs";
+import { IoLogoLinkedin } from "react-icons/io5";
+import { FaSquareYoutube } from "react-icons/fa6";
+import { AiOutlineDoubleRight } from "react-icons/ai";
+import { useState, useEffect, useRef } from "react";
+
+
+function HeroSection (){
+    const menuRef = useRef()
+    const [ IsMenuOpen, setIsMenuOpen] = useState(false)
+    const [IsHeaderOpen, setIsHeaderOpen] = useState(false)
+    const [logoSize, setLogoSize] = useState("large")
+    // const [IsHeroSectionVisible, setIsHeroSectionVisible] = useState(true)
+    const MenuOpen = () =>{
+        setIsMenuOpen(true)
+    }
+    const MenuClose = () =>{
+        setIsMenuOpen(false)
+    }
+
+    // const HeaderScrolled = () => {
+    //     setIsHeaderOpen(true)
+    // }
+
+    // UseEffect gan wuxuu qaabilsan yahay marka lagu dhufto hero section screen meel waliba oo kamid  in uu menu bar close gareyo
+    useEffect(() => {
+        const HandleClickOutside = (e) => {
+            if (menuRef.current && !menuRef.current.contains(e.target)){
+                MenuClose()
+            }
+        }
+        document.addEventListener('mousedown', HandleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', HandleClickOutside);
+        }
+    })
+    // useEffect gan wuxuu qaabil san yahay marka menu bar uu furan yahay inuusan scroll gareesmin 
+    // menu bar ama opacity waxa ka dambeya yacni body ga website hadii  ama la scroll gareyana wax shaqo ma qabanayo
+    useEffect(() => {
+        if (IsMenuOpen){
+            document.body.classList.add("overflow-hidden");
+        }
+        else{
+            document.body.classList.remove("overflow-hidden");
+        }
+    },[IsMenuOpen]) 
+    
+    //useEffect gan wuxuu qaabil san yahay logo-da marka la jogo hero section inay wayn ahaato marka la scroll gareyo oo laga hero section inay yaraato logo-da
+    useEffect(() => {
+        const HandleScroll = () => {
+            const scrollY = window.scrollY
+            const HeroSectionHeight = document.getElementById('hero-section').offsetHeight;
+            if (scrollY > HeroSectionHeight){
+                setLogoSize("small")
+                setIsHeroSectionVisible(false)
+            }
+            else {
+                setLogoSize('large')
+                setIsHeroSectionVisible(true)
+            }
+        }
+        window.addEventListener('scroll', HandleScroll)
+        return () => {
+            window.removeEventListener('scroll', HandleScroll)
+        }
+    },[])
+    return <div>
+        <div id="hero-section">
+            {/* HeroSection Video */}
+            <video
+                className="absolute top-0 left-0 w-full h-full object-cover"src={iRisehubVideo} autoPlay loop muted playsInline>
+            </video>
+            {/* Main Header  */}
+            <div className={` fixed z-20 transition-all duration-500   w-full px-[80px]  h-[80px] ${ logoSize === "large" ?  " top-[22px]" : "top-0 backdrop-blur-md bg-black/30"} ${IsHeaderOpen ? "translate-y-0 " : "-translate-y-full mt-[80px] pt-5"}`}>
+                <div className={`flex justify-between  mt-[-50px] items-center  `}>
+                    <img className={`w-[180px] ml-[-30px] h-[140px] transition-all duration-500"  "w-[100px] h-[180px]"} ml-[-30px] `} src={iRisehubLogo} alt="iRisehub Logo" />
+                    <h1 style={{display: IsMenuOpen == true  ? "none" : ""}} onClick={MenuOpen} className="bg-orange px-[10px] py-[5px] text-white font-semibold hover:underline"> Menu </h1>
+                </div>
+                {/* The Huge irisehub Text  */}
+                <h1 className={`  transition-all duration-700 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[130px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "} `}> {'<irisehub>'} </h1>
+            </div>
+        </div>
+        
+        {/* Desktop Menu */}
+        <div  className={`w-full left-0 h-full fixed z-20 top-0  transition-transform duration-500 ease-in-out ${ IsMenuOpen ? "-translate-x-0" : "translate-x-full"} bg-black/80`}>
+            <div  ref={menuRef} className={`w-[350px] right-0 fixed h-screen z-30 bg-orange  transition-transform duration-500 ease-in-out ${IsMenuOpen ? "translate-y-0" : "-translate-x-full"}`} style={{right:0}}>
+                <div className=" h-full overflow-y-auto">
+                    {/* Close Button */}
+                    <div style={{display: IsMenuOpen == true ? "block" : ""}} onClick={MenuClose} className=" w-[50px] h-[50px]  hover:text-white absolute  text-orange items-center right-10 top-11 flex justify-center pt-[7px] pl-[6px] hover:bg-transparent hover:border-2  hover:border-white bg-white">
+                        <MdOutlineClose className=" text-4xl " />
+                    </div>
+                    {/* Menu Items  */}
+                    <div className="pt-[120px]">
+                        <ul className="font-poppins font-semibold ml-[30px] text-white text-[25px] leading-[80px]">
+                            <li className="border-b-1 w-[250px] border-white"> About Us </li>
+                            <li className="border-b-1 w-[250px] border-white"> Contact Us </li>
+                            <li className="border-b-1 w-[250px] border-white"> Ecosystem </li>
+                            <li className="border-b-1 w-[250px] border-white"> Community </li>
+                            <li className="border-b-1 w-[250px] border-white"> Startups </li>
+                            <li className=""> Area We Focus </li>
+                        </ul>
+                    </div>
+                <div className="w-full   bg-[#c43e19] pb-[30px] pt-[20px] pl-[30px]">
+                    <div className="flex gap-[50px]  ">
+                    <ul className="font-poppins text-white text-[14px] leading-[30px]">
+                        <li className="hover:underline"> What We Do </li>
+                        <li className="hover:underline"> Who We Are </li>
+                        <li className="hover:underline"> Events </li>
+                        <li className="hover:underline"> News </li>
+                    </ul>
+                    <ul className="font-poppins text-white text-[14px] leading-[30px]">
+                        <li className="hover:underline "> Terms of Service </li>
+                        <li className="hover:underline "> Privacy Policy  </li>
+                        <li className="hover:underline "> Cookie Settings </li>
+                        <li className="hover:underline "> Contact Us </li>
+                    </ul>
+                    </div>
+                    {/* Social Media Platforms icon */}
+                    <div className="flex gap-[10px] mt-7 ml-[-8px]">
+                        <FaSquareFacebook className="w-[40px] h-[25px] hover:text-[#0e0e0e] text-white"/>
+                        <BsTwitterX className="w-[40px] h-[25px] hover:text-[#0e0e0e] text-white"/>
+                        <IoLogoLinkedin className="w-[40px] h-[25px] hover:text-[#0e0e0e] text-white"/>
+                        <FaSquareYoutube className="w-[40px] h-[25px] hover:text-[#0e0e0e] text-white"/>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+export default HeroSection
