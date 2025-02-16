@@ -1,8 +1,9 @@
-import Moving from "../Components/movingTest"
+// import Ecosystem from "../Components/Ecosystem"
+// // import Moving from "../Components/movingTest"
 
-function TestPages (){ //This page is only for testing 
-    return <div>
-            <Moving />
-    </div>
-}
-export default TestPages //This page is only for testing 
+// function TestPages (){ //This page is only for testing 
+//     return <div>
+//             <Ecosystem />
+//     </div>
+// }
+// export default TestPages //This page is only for testing 
