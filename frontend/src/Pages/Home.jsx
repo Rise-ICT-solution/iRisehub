@@ -56,7 +56,7 @@ function Home (){
     return <div>
         
         <HeroSection />
-        <div className="mt-[650px]  px-[100px]">
+        <div className="mt-[650px]  px-[20px]">
             <BriefAboutiRise />
         </div>
         {/* Impact NUmbers Section  */}
