@@ -49,6 +49,7 @@ import Ayaan from "../Images/AyaanMire.png"
 import Ahmed from "../Images/AhmedAbdulle.png"
 // footer
 import Footer from "../Components/footer";
+import BookNow from "../Components/BookNow";
 
 
 
@@ -66,27 +67,8 @@ function Home (){
                 <p className="border-2 border-orange w-[150px] text-center items-center flex gap-3 justify-center rounded-[10px] py-[7px] hover:bg-orange hover:text-white h-[40px]"> Learn more <FaArrowRight />
                 </p>
             </div>
-            <div className="flex  w-full overflow-x-hidden  items-center p-4 bg-orange">
-                <div className=" flex justify-around w-full items-center animate-scroll-right">
-                    {/* <div className="flex justify-around  w-full">
-                        <Impacts Icon={LiaNetworkWiredSolid} number="28+" program="Programs" />
-                        <Impacts Icon={MdEventNote} number="350+" program="Events" />
-                        <Impacts Icon={BsRocket} number="400+" program="Impacted Startups" />
-                        <Impacts Icon={FaHandHoldingUsd} number="720,000" program="Startup Grant" />
-                    </div> */}
-                    {/* <div className="flex justify-around w-full">
-                        <Impacts Icon={FaUserTie} number="80+" program="Mentors" />
-                        <Impacts Icon={PiUsersFourLight} number="25K" program="Participants" />
-                        <Impacts Icon={PiHandFistBold} number="3,000+" program="Youth Empowered" />
-                        <Impacts Icon={FaRegHandshake} number="50+" program="Partners" />
-                    </div> */}
-                    <div className="flex justify-around w-full">
-                        <Impacts Icon={FaSackDollar} number="10M" program="Investment Raised" />
-                        <Impacts Icon={TbUserBitcoin} number="300+" program="Women Invested" />
-                        <Impacts Icon={HiOutlineClipboardDocumentList} number="45K" program="Application Received" />
-                        <Impacts Icon={FaPeopleGroup} number="40K" program="iRise Community Members" />
-                    </div>
-                </div>
+            <div className="flex  w-full">
+                <Impacts />
             </div>    
             </div>
             {/* Events and Updates Section */}
@@ -94,11 +76,11 @@ function Home (){
 
                 <div className=" w-full h-[800px] bg-cover bg-center bg-fixed " style={{backgroundImage: `url(${EventUpdateBgImage})`}}>
                     {/* <img className="w-full pb-[30px] h-[850px] relative object-cover" src={EventUpdateBgImage} alt="" /> */}
-                    <div className="absolute h-[800px] bg-cover w-full bg-black/50 inset-0 pt-16">
-                        <h1 className="text-center text-[40px] text-white font-semibold font-poppins"> Events and Updates </h1>
+                    <div className="absolute h-[800px] bg-cover w-full bg-[#EEF3F9]/50 inset-0 pt-16">
+                        <h1 className="text-center text-[40px] text-orange font-semibold font-poppins"> Events and Updates </h1>
                         <div className="absolute right-14 gap-3 top-18   flex ">
-                            <IoIosArrowDropleft className="text-[40px] hover:text-orange text-white" />
-                            <IoIosArrowDroprightCircle className="text-[40px] hover:text-orange text-white" />
+                            <IoIosArrowDropleft className="text-[40px] hover:text-orange text-[#e84e249e]" />
+                            <IoIosArrowDroprightCircle className="text-[40px] hover:text-[#e84e249e] text-orange" />
                         </div>
                         <div className="mt-16 flex justify-around">
                             <EventUpdate image={EventOneImage} date="Dec 7,2024" title="Empowering Dreams in AWE" description="In our Academy for Women Entrepreneurship, we've been busy diving into the art of creating impactful business plans, fostering innovation, and igniting the flame of aspirations."  />
@@ -118,6 +100,10 @@ function Home (){
                         
                     </div>
                 </div>
+            </div>
+            {/* Book an Event */}
+            <div className="mt-10 mb-10">
+                <BookNow />
             </div>
             {/* Valued Partners Section  */}
             <div className="w-full pt-15 bg-orange px-[20px] font-poppins pb-[70px] text-white">
