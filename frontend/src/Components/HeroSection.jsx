@@ -76,7 +76,7 @@ function HeroSection (){
                 className="absolute top-0 left-0 w-full h-full object-cover"src={iRisehubVideo} autoPlay loop muted playsInline>
             </video>
             {/* Main Header  */}
-            <div className={` fixed z-20 transition-all duration-500   w-full px-[80px]  h-[80px] ${ logoSize === "large" ?  " top-[22px]" : "top-0 backdrop-blur-md bg-black/30"} ${IsHeaderOpen ? "translate-y-0 " : "-translate-y-full mt-[80px] pt-5"}`}>
+            <div className={` fixed z-20 transition-all duration-500   w-full px-[80px]  h-[80px] ${ logoSize === "large" ?  " top-0" : "top-0 backdrop-blur-md bg-black/30"} ${IsHeaderOpen ? "translate-y-0 " : "-translate-y-full mt-[80px] pt-5"}`}>
                 <div className={`flex justify-between  mt-[-50px] items-center  `}>
                     <img className={`w-[180px] ml-[-30px] h-[140px] transition-all duration-500"  "w-[100px] h-[180px]"} ml-[-30px] `} src={iRisehubLogo} alt="iRisehub Logo" />
                     <h1 style={{display: IsMenuOpen == true  ? "none" : ""}} onClick={MenuOpen} className="bg-orange px-[10px] py-[5px] text-white font-semibold hover:underline"> Menu </h1>
@@ -88,38 +88,64 @@ function HeroSection (){
         
         {/* Desktop Menu */}
         <div  className={`w-full left-0 h-full fixed z-20 top-0  transition-transform duration-500 ease-in-out ${ IsMenuOpen ? "-translate-x-0" : "translate-x-full"} bg-black/80`}>
-            <div  ref={menuRef} className={`w-[350px] right-0 fixed h-screen z-30 bg-orange  transition-transform duration-500 ease-in-out ${IsMenuOpen ? "translate-y-0" : "-translate-x-full"}`} style={{right:0}}>
+            <div  ref={menuRef} className={`w-[400px] right-0 fixed h-screen z-30 bg-orange  transition-transform duration-500 ease-in-out ${IsMenuOpen ? "translate-y-0" : "-translate-x-full"}`} style={{right:0}}>
                 <div className=" h-full overflow-y-auto">
                     {/* Close Button */}
                     <div style={{display: IsMenuOpen == true ? "block" : ""}} onClick={MenuClose} className=" w-[50px] h-[50px]  hover:text-white absolute  text-orange items-center right-10 top-11 flex justify-center pt-[7px] pl-[6px] hover:bg-transparent hover:border-2  hover:border-white bg-white">
                         <MdOutlineClose className=" text-4xl " />
                     </div>
                     {/* Menu Items  */}
-                    <div className="pt-[120px]">
-                        <ul className="font-poppins font-semibold ml-[30px] text-white text-[25px] leading-[80px]">
-                            <li className="border-b-1 w-[250px] border-white"> About Us </li>
-                            <li className="border-b-1 w-[250px] border-white"> Contact Us </li>
-                            <li className="border-b-1 w-[250px] border-white"> Ecosystem </li>
-                            <li className="border-b-1 w-[250px] border-white"> Community </li>
-                            <li className="border-b-1 w-[250px] border-white"> Startups </li>
-                            <li className=""> Area We Focus </li>
-                        </ul>
+                    <div className="pt-[120px] font-poppins font-semibold ml-[30px] text-white text-[25px] leading-[80px]">
+                        <div className=" border-b-1 pb-2 w-[250px] border-white group ">
+                            <h1 className=" text-[25px] hover:text-[#0e0e0e] font-poppins"> About Us </h1>
+                            <ul className=" hidden group-hover:block font-poppins font-semibold mt-[-10px] ml-[15px] text-white text-[18px] leading-[40px]">
+                                <li className=" w-[250px] hover:underline border-white"> Our Team </li>
+                                <li className=" w-[250px] hover:underline border-white"> Policies </li>
+                                <li className=" w-[250px] hover:underline border-white"> Visual Identity </li>
+                            </ul>
+                        </div>
+
+                        <div className=" border-b-1 pb-2 w-[250px] border-white group ">
+                            <h1 className=" text-[25px] hover:text-[#0e0e0e] font-poppins"> Ecosystem </h1>
+                            <ul className=" hidden group-hover:block font-poppins font-semibold mt-[-10px] ml-[15px] text-white text-[18px] leading-[40px]">
+                                <li className=" w-[250px] hover:underline border-white"> Rise Academy </li>
+                                <li className=" w-[250px] hover:underline border-white"> Rise Solution </li>
+                                <li className=" w-[250px] hover:underline border-white"> Minbar </li>
+                                <li className=" w-[250px] hover:underline border-white"> Kobciye </li>
+                                <li className=" w-[250px] hover:underline border-white"> Mogadishu Tech Summit </li>
+                                <li className=" w-[250px] hover:underline border-white"> TVET </li>
+                                <li className=" w-[250px] hover:underline border-white"> IFFS </li>
+                            </ul>
+                        </div>
+
+                        <h1 className="border-b-1 w-[250px] hover:text-[#0e0e0e] border-white"> Areas We Focus </h1>
+
+                        <div className=" border-b-1 pb-2 w-[250px] border-white group ">
+                            <h1 className=" text-[25px] hover:text-[#0e0e0e] font-poppins"> Community </h1>
+                            <ul className=" hidden group-hover:block font-poppins font-semibold mt-[-10px] ml-[15px] text-white text-[18px] leading-[40px]">
+                                <li className=" w-[250px] hover:underline border-white"> Events </li>
+                                <li className=" w-[250px] hover:underline border-white"> News </li>
+                                <li className=" w-[250px] hover:underline border-white"> Newsletter </li>
+                            </ul>
+                        </div>
+                        <h1 className=" w-[250px] hover:text-[#0e0e0e] border-white"> Startups </h1>
+                    
                     </div>
-                <div className="w-full   bg-[#c43e19] pb-[30px] pt-[20px] pl-[30px]">
-                    <div className="flex gap-[50px]  ">
-                    <ul className="font-poppins text-white text-[14px] leading-[30px]">
-                        <li className="hover:underline"> What We Do </li>
-                        <li className="hover:underline"> Who We Are </li>
-                        <li className="hover:underline"> Events </li>
-                        <li className="hover:underline"> News </li>
-                    </ul>
-                    <ul className="font-poppins text-white text-[14px] leading-[30px]">
-                        <li className="hover:underline "> Terms of Service </li>
-                        <li className="hover:underline "> Privacy Policy  </li>
-                        <li className="hover:underline "> Cookie Settings </li>
-                        <li className="hover:underline "> Contact Us </li>
-                    </ul>
-                    </div>
+            <div className="w-full   bg-[#c43e19] pb-[30px] pt-[20px] pl-[30px]">
+                <div className="flex gap-[50px]  ">
+                <ul className="font-poppins text-white text-[14px] leading-[30px]">
+                    <li className="hover:underline"> What We Do </li>
+                    <li className="hover:underline"> Who We Are </li>
+                    <li className="hover:underline"> Events </li>
+                    <li className="hover:underline"> News </li>
+                </ul>
+                <ul className="font-poppins text-white text-[14px] leading-[30px]">
+                    <li className="hover:underline "> Terms of Service </li>
+                    <li className="hover:underline "> Privacy Policy  </li>
+                    <li className="hover:underline "> Cookie Settings </li>
+                    <li className="hover:underline "> Contact Us </li>
+                </ul>
+                </div>
                     {/* Social Media Platforms icon */}
                     <div className="flex gap-[10px] mt-7 ml-[-8px]">
                         <FaSquareFacebook className="w-[40px] h-[25px] hover:text-[#0e0e0e] text-white"/>
