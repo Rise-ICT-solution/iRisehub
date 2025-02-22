@@ -1,3 +1,4 @@
+
 function Impacts (){
     return <div className="font-poppins   text-white leading-[35px] mt-10   text-center  ">
         <div className="flex gap-2 items-end">
