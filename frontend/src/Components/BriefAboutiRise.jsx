@@ -1,8 +1,8 @@
-import iRiseLogoCover from "../Images/Home Pages images/iRiseCover.png"
-import Presentation from "../Images/Home Pages images/Presentation.png"
-import Ainte from "../Images/Home Pages images/Caynte.png"
-import iRisehubTeam from "../Images/Home Pages images/Team.png"
-import Marti from "../Images/Home Pages images/Marti.png"
+import iRiseLogoCover from "../Images/Home-Pages-images/iRiseCover.png"
+import Presentation from "../Images/Home-Pages-images/Presentation.png"
+import Ainte from "../Images/Home-Pages-images/Caynte.png"
+import iRisehubTeam from "../Images/Home-Pages-images/Team.png"
+import Marti from "../Images/Home-Pages-images/Marti.png"
 function BriefAboutiRise (){
     return <div>
         <h1 className="text-center  text-[30px] font-poppins font-semibold text-orange "> A brief about iRisehub</h1>
