@@ -55,7 +55,6 @@ import { IoArrowForwardCircle } from "react-icons/io5";
 // footer
 import Footer from "../Components/footer";
 import BookNow from "../Components/BookNow";
-import TestTestmonial from "../Components/TestTestmonial";
 import { useState } from "react";
 
 const testmonials = [
@@ -224,9 +223,9 @@ function Home (){
                 </div>
             </div>
             {/* Testmonial Section */}
-            <div className="mt- w-full sm:h-[400px] relative mb-[500px]  justify-around">
-                <img className="w-full h-[800px] sm:h-[842px] absolute  bg-cover" src={TestMonialBgImage} alt="" />
-                <div className="w-full bg-black/60 absolute h-[800px] sm:h-[842px]">
+            <div className="w-full sm:h-[400px] relative   justify-around">
+                <img className="w-full  sm:h-[780px] absolute  bg-cover" src={TestMonialBgImage} alt="" />
+                <div className="w-full bg-black/60 absolute h-[800px] sm:h-[780px]">
                     <div className=" text-center mt-20 font-poppins">
                             <h1 className=" text-[30px] font-semibold text-orange "> #WhyiRise</h1>
                             <p className=" w-[350px] ml-5 sm:w-[500px] sm:ml-[30%] mt-3 text-white"> We are iRisehub, a community of disruptors and dreamers, fostering innovation, entrepreneurship, and technology to build a thriving future for Somalia.</p>
@@ -268,7 +267,7 @@ function Home (){
                 </div>
             </div>
             {/* Footer */}
-            <div className="sm:mt-[100px] ">
+            <div className="sm:mt-[450px] mt-[800px] z-10 absolute w-full ">
                 <Footer />
             </div>
         </div>
