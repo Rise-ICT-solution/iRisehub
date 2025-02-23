@@ -24,7 +24,7 @@ import EventUpdateBgImage from "../Images/EventsBG.jpg"
 import EventOneImage from "../Images/Event1Image.png"
 import EventTwoImage from "../Images/Event2Image.png"
 import EventThreeImage from "../Images/Event3Image.png"
-import EventFourImage from "../Images/Home Pages images/Presentation.png"
+import EventFourImage from "../Images/Home-Pages-images/Presentation.png"
 import Partners from "../Components/Partner";
 //Partners Logo Images
 import UNFPA from "../Images/UNFPA.png"

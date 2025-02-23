@@ -8,6 +8,7 @@ import { IoLogoLinkedin } from "react-icons/io5";
 import { FaSquareYoutube } from "react-icons/fa6";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import { useState, useEffect, useRef } from "react";
+import {Link} from "react-router-dom";
 
 
 function HeroSection (){
@@ -82,7 +83,7 @@ function HeroSection (){
                     <h1 style={{display: IsMenuOpen == true  ? "none" : ""}} onClick={MenuOpen} className="bg-orange px-[10px] py-[5px] text-white font-semibold hover:underline"> Menu </h1>
                 </div>
                 {/* The Huge irisehub Text  */}
-                <h1 className={`  transition-all duration-700 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[130px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "} `}> {'<irisehub>'} </h1>
+                {/* <h1 className={`  transition-all duration-700 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[130px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "} `}> {'<irisehub>'} </h1> */}
             </div>
         </div>
         
@@ -123,9 +124,9 @@ function HeroSection (){
                         <div className=" border-b-1 pb-2 w-[250px] border-white group ">
                             <h1 className=" text-[25px] hover:text-[#0e0e0e] font-poppins"> Community </h1>
                             <ul className=" hidden group-hover:block font-poppins font-semibold mt-[-10px] ml-[15px] text-white text-[18px] leading-[40px]">
-                                <li className=" w-[250px] hover:underline border-white"> Events </li>
-                                <li className=" w-[250px] hover:underline border-white"> News </li>
-                                <li className=" w-[250px] hover:underline border-white"> Newsletter </li>
+                                <Link to="/events" ><li className=" w-[250px] hover:underline border-white"> Events </li></Link>
+                                <Link to="/news" ><li className=" w-[250px] hover:underline border-white"> News </li></Link>
+                                <Link to="/newsletter" ><li className=" w-[250px] hover:underline border-white"> Newsletter </li></Link>
                             </ul>
                         </div>
                         <h1 className=" w-[250px] hover:text-[#0e0e0e] border-white"> Startups </h1>
