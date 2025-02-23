@@ -7,25 +7,18 @@
   }
 
 
-/* 
-  @keyframes slideLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
     }
-    to {
-        transform: translateX(0);
-        opacity: 1;
+    100% {
+      transform: translateX(-100%);
     }
-}
-
-@keyframes slideRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
+  }
+  
+  @layer utilities {
+    .animate-scroll {
+      animation: scroll 10s linear infinite;
     }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-} */
+  }
+  

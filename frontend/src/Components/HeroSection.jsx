@@ -86,12 +86,12 @@ function HeroSection (){
             </div>
         </div>
         
-        {/* Desktop Menu */}
-        <div  className={`w-full left-0 h-full fixed z-20 top-0  transition-transform duration-500 ease-in-out ${ IsMenuOpen ? "-translate-x-0" : "translate-x-full"} bg-black/80`}>
-            <div  ref={menuRef} className={`w-[400px] right-0 fixed h-screen z-30 bg-orange  transition-transform duration-500 ease-in-out ${IsMenuOpen ? "translate-y-0" : "-translate-x-full"}`} style={{right:0}}>
+        {/* Desktop Menu ---------------> FIxed-ka ka saar sm */}
+        <div  className={`w-full left-0 h-full sm:fixed z-20 top-0  transition-transform duration-500 ease-in-out ${ IsMenuOpen ? "-translate-x-0" : "translate-x-full"} bg-black/80`}>
+            <div  ref={menuRef} className={`w-[400px] right-0 sm:fixed h-screen z-30 bg-orange  transition-transform duration-500 ease-in-out ${IsMenuOpen ? "translate-y-0" : "-translate-x-full"}`} style={{right:0}}>
                 <div className=" h-full overflow-y-auto">
                     {/* Close Button */}
-                    <div style={{display: IsMenuOpen == true ? "block" : ""}} onClick={MenuClose} className=" w-[50px] h-[50px]  hover:text-white absolute  text-orange items-center right-10 top-11 flex justify-center pt-[7px] pl-[6px] hover:bg-transparent hover:border-2  hover:border-white bg-white">
+                    <div style={{display: IsMenuOpen == true ? "block" : ""}} onClick={MenuClose} className=" w-[50px] sm:hidden  h-[50px]  hover:text-white absolute  text-orange items-center right-10 top-11 flex justify-center pt-[7px] pl-[6px] hover:bg-transparent hover:border-2  hover:border-white bg-white">
                         <MdOutlineClose className=" text-4xl " />
                     </div>
                     {/* Menu Items  */}

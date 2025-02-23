@@ -6,9 +6,9 @@ import Marti from "../Images/Home Pages images/Marti.png"
 function BriefAboutiRise (){
     return <div>
         <h1 className="text-center  text-[30px] font-poppins font-semibold text-orange "> A brief about iRisehub</h1>
-        <div className="flex w-full  justify-around mt-10 ">
+        <div className="sm:flex w-full   justify-around mt-10 ">
 
-            <div className="w-[400px]   font-poppins mt-16">
+            <div className="sm:w-[400px] w-[350px]   font-poppins mt-0 sm:mt-16">
                 <h1 className="font-bold text-[30px] mb-1 "> Who We Are</h1>
                 <p> We are the launching-pad for Somali's innovation, entrepreneurship and technological leap-frogging. We are community of pioneers and social-disputers to drive economic prosperity.</p>
                 {/* <button className=" mt-5 rounded-lg  w-[120px] h-[40px] text-[14px] border-1 hover:border-none hover:bg-orange hover:text-white hover:font-normal border-orange text-orange font-medium "> View more </button> */}
@@ -21,7 +21,7 @@ function BriefAboutiRise (){
             </div>
 
             {/* Brief Right */}
-            <div className=" flex gap-2">
+            <div className="mt-5 sm:mt-0 flex gap-2">
                 {/* Brief Right Column 1 */}
                 <div className="w-[300px]">
                     <div className="w-full  overflow-hidden h-[180px] bg-gray-400 rounded-lg">
