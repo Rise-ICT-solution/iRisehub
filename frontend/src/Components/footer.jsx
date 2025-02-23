@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaSquareYoutube } from "react-icons/fa6";
 
 function Footer (){
-    return <div className="w-full px-[10px]  pb-[30px] ">
+    return <div className="w-full px-[10px]   pb-[30px] ">
         <div className="flex justify-around">
             <ul className=" leading-[28px] ">
                 <li className="font-semibold text-[18px] font-poppins mb-2"> Quick Links </li>
