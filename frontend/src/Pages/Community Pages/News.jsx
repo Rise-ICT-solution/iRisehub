@@ -7,9 +7,11 @@ import ghuul from "../../Images/ghuul.png";
 import footer from "../../Components/footer.jsx"
 import Footer from "../../Components/footer.jsx"
 import Newsletter from "../../Components/Newsletter";
+import Header from "../../Components/Header.jsx"
 const NewsPage = () => {
   return (
     <div className="w-full">
+      <Header />
       {/* Header Section */}
       <div className="relative">
         <img src={HedaerPicture} alt="Event" className="w-full object-cover" />
