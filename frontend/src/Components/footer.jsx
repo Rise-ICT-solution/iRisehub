@@ -57,11 +57,10 @@ function Footer (){
         <div className="w-full border-t-1 sm:flex justify-between border-t-gray-600 pt-2 mt-10">
             <h1 className="text-[17px] font-light sm:mt-0 mt-3 hover:text-orange"> ©2024 iRisehub® Home of innovation </h1>
             <ul className="sm:flex gap-5 sm:mt-0 mt-3 font-light">
-                <li className="hover:text-orange border-r-[1.5px] pr-3 border-r-gray-400"> Terms of Service </li>
-                <li className="hover:text-orange border-r-[1.5px] pr-3 border-r-gray-400"> Privacy Policy </li>
-                <li className="hover:text-orange pr-3 "> Cookie Settings </li>
-                <li className="hover:text-orange  pr-3"> Contact Us</li>
-                <li className="hover:text-orange  pr-3"> Nuur</li>
+                <li className="hover:text-orange sm:border-r-[1.5px] sm:pr-3 border-r-gray-400"> Terms of Service </li>
+                <li className="hover:text-orange sm:border-r-[1.5px] sm:pr-3 border-r-gray-400"> Privacy Policy </li>
+                <li className="hover:text-orange sm:pr-3 "> Cookie Settings </li>
+                <li className="hover:text-orange  sm:pr-3"> Contact Us</li>
             </ul>
         </div>
         
