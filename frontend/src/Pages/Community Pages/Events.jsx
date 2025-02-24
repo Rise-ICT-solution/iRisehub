@@ -6,6 +6,8 @@ function Events (){
     return <div>
        
         <EventsHero/>
+        <EventsList/>
+        <EventsAnd/>
 
     </div>
 }
