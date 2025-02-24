@@ -6,6 +6,7 @@ import HakiimiImg from "../../Images/HakiimiImg.jpg";
 import ghuul from "../../Images/ghuul.png";
 import footer from "../../Components/footer.jsx"
 import Footer from "../../Components/footer.jsx"
+import Newsletter from "../../Components/Newsletter";
 const NewsPage = () => {
   return (
     <div className="w-full">
@@ -74,6 +75,7 @@ const NewsPage = () => {
 
       {/* Footer Section */}
       <div>
+        <Newsletter/>
         <Footer />
       </div>
     </div>
