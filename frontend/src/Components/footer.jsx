@@ -5,7 +5,7 @@ import { FaSquareYoutube } from "react-icons/fa6";
 import iRiseLogo from "../Images/iRisehubLogo.png"
 
 function Footer (){
-    return <div className="sm:w-full w-[350px] px-[10px]  pb-[30px] ">
+    return <div className="sm:w-full w-[350px] border-t-10 border-orange pt-10 px-[10px]  pb-[30px] ">
         <div className="sm:flex justify-around">
             <div className="sm:mt-[-40px] mb-5 sm:mb-0 ml-13 sm:ml-0 ">
                 <img className="w-[250px] h-[200px]" src={iRiseLogo} alt="" />

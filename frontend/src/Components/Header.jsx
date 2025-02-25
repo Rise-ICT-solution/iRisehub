@@ -75,7 +75,7 @@ function Header (){
             {/* Main Header  */}
             <div className={` fixed z-20 transition-all duration-500   w-full px-[80px]  h-[80px] ${ logoSize === "large" ?  " top-0" : "top-0 backdrop-blur-md bg-black/30"} ${IsHeaderOpen ? "translate-y-0 " : "-translate-y-full mt-[80px] pt-5"}`}>
                 <div className={`flex justify-between  mt-[-50px] items-center  `}>
-                    <img className={`w-[180px] ml-[-30px] h-[140px] transition-all duration-500"  "w-[100px] h-[180px]"} ml-[-30px] `} src={iRisehubLogo} alt="iRisehub Logo" />
+                    <Link to="/" ><img className={`w-[200px] ml-[-30px] h-[140px] transition-all duration-500"  "w-[100px] h-[180px]"} ml-[-30px] `} src={iRisehubLogo} alt="iRisehub Logo" /></Link>
                     <h1 style={{display: IsMenuOpen == true  ? "none" : ""}} onClick={MenuOpen} className="bg-orange px-[10px] py-[5px] text-white font-semibold hover:underline"> Menu </h1>
                 </div>
                 {/* The Huge irisehub Text  */}
@@ -84,12 +84,15 @@ function Header (){
         </div>
         
         {/* Desktop Menu ---------------> FIxed-ka ka saar sm */}
-        <div  className={`w-full left-0 h-full sm:fixed z-20 top-0  transition-transform duration-500 ease-in-out ${ IsMenuOpen ? "-translate-x-0" : "translate-x-full"} bg-black/80`}>
+        <div  className={`w-full left-0 h-full fixed z-20 top-0  transition-transform duration-500 ease-in-out ${ IsMenuOpen ? "-translate-x-0" : "translate-x-full"} bg-black/80`}>
             <div  ref={menuRef} className={`w-[400px] right-0 sm:fixed h-screen z-30 bg-orange  transition-transform duration-500 ease-in-out ${IsMenuOpen ? "translate-y-0" : "-translate-x-full"}`} style={{right:0}}>
                 <div className=" h-full overflow-y-auto">
                     {/* Close Button */}
-                    <div style={{display: IsMenuOpen == true ? "block" : ""}} onClick={MenuClose} className=" w-[50px] sm:hidden  h-[50px]  hover:text-white absolute  text-orange items-center right-10 top-11 flex justify-center pt-[7px] pl-[6px] hover:bg-transparent hover:border-2  hover:border-white bg-white">
+                    <div style={{display: IsMenuOpen == true ? "block" : ""}} onClick={MenuClose} className=" w-[50px] hidden  h-[50px]  hover:text-white absolute  text-orange items-center right-10 top-11  justify-center pt-[7px] pl-[6px] hover:bg-transparent hover:border-2  hover:border-white bg-white">
                         <MdOutlineClose className=" text-4xl " />
+                    </div>
+                    <div onClick={MenuClose} className="absolute top-11 flex justify-center items-center sm:hidden  w-[50px] h-[50px] text-orange bg-white hover:bg-transparent hover:border-2 hover:border-white hover:text-white">
+                        <MdOutlineClose className="text-4xl" />
                     </div>
                     {/* Menu Items  */}
                     <div className="pt-[120px] font-poppins font-semibold ml-[30px] text-white text-[25px] leading-[80px]">
