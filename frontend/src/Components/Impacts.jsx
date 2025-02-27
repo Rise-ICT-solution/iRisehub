@@ -11,7 +11,7 @@ import CountUp from "react-countup"
 
 
 function Impacts (){
-    return <div className="font-poppins   text-white leading-[35px] mt-7 sm:mt-[290px]   text-center  ">
+    return <div className="font-poppin text-white leading-[35px] mt-7 sm:mt-[290px] text-center ">
         {/* Top */}
         <div className="sm:flex gap-2 px-[10px]  ml-10 sm:ml-0 items-end">
             {[
@@ -23,7 +23,7 @@ function Impacts (){
                 { count: 25, label: "Participants", height:"h-[380px]", bgColor:"bg-[#FFBC01]", suffix:"K" },
             ].map((ImpactNumber,index) => (
                 <div key={index} className="sm:mt-0 mt-7">
-                    <div className={`w-[300px] sm:${ImpactNumber.height} sm:w-[200px]  h-[170px] ${ImpactNumber.bgColor} rounded-lg leading-[22px] sm:text-left  sm:p-4 sm:justify-end sm:items-start items-center justify-center flex-col flex`}>
+                    <div className={`w-[300px] sm:${ImpactNumber.height} sm:w-[200px]  h-[170px] ${ImpactNumber.bgColor} rounded-lg leading-[22px] sm:text-left  sm:p-4 sm:justify-end sm:items-start items-center justify-center flex-col flex`} >
                         <h1 className="text-[40px] sm:text-[35px] font-semibold mb-2"> <CountUp end={ImpactNumber.count} suffix={ImpactNumber.suffix} /> </h1> {/*50+ || bg-[#051C3C]*/} 
                         <h1 className="text-[20px] sm:text-[16px] mt-2 sm:mt-0"> {ImpactNumber.label}</h1> {/*Partners*/}
                     </div>
@@ -32,7 +32,7 @@ function Impacts (){
         </div>
         
         <div className=" gap-2 ml-6 sm:ml-0 sm:absolute px-[20px] sm:mt-[-590.5px]">
-            <div className=" grid grid-cols-[200px_200px_200px] gap-y-[30px] mt-0  py-[30px]  sm:mt-[-60px] h-[300px] bg-orange">
+            <div className=" grid grid-cols-2 sm:grid-cols-3 gap-y-8 py-10 bg-orange sm:mt-0 mt-7 sm:w-[600px] w-0 rounded-lg">
                 {[
                     { icon: <FaSackDollar /> , count: 10, label: "Investment Raised", prefix:"$", suffix:"M+" },
                     { icon: <LiaHandHoldingUsdSolid /> , count: 720, label: "Startup Grant", prefix:"$", suffix:"K" },

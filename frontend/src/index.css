@@ -8,17 +8,31 @@
 
 
   @keyframes scroll {
-    0% {
+    from {
       transform: translateX(0);
     }
-    100% {
-      transform: translateX(-100%);
+    to {
+      transform: translateX(-50%);
     }
   }
   
   @layer utilities {
     .animate-scroll {
-      animation: scroll 10s linear infinite;
+      animation: scroll 15s linear infinite;
+      width: fit-content;
     }
   }
-  
+  @keyframes slide-in {
+    0% {
+        transform: translateX(-10%) scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in {
+    animation: slide-in 1s forwards;
+}
