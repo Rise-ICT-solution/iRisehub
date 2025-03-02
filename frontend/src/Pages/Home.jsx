@@ -57,6 +57,7 @@ import Footer from "../Components/footer";
 import BookNow from "../Components/BookNow";
 import { useState } from "react";
 
+
 const testmonials = [
     {
         image: MohamedBashir, name: "Mohamed Bashir", describtion:"beneficiary It is indeed a remarkable and unique somali startups to create advanced and unprecedented technologies and services",
@@ -135,63 +136,16 @@ function Home (){
             <BriefAboutiRise />
         </div>
         {/* Impact NUmbers Section  */}
-        <div className="pb-[100px] mt-[70px]">
-            <div className="flex mb-[10px] font-poppins justify-between px-[20px]">
-                <h1 className="sm:text-[22px] text-[20px] font-semibold"> Impact Numbers </h1>
-                <p className="border-2 text-[14px] sm:text-[16px] border-orange w-[130px] text-center items-center flex gap-3 justify-center rounded-[10px] py-[7px] hover:bg-orange hover:text-white h-[40px]"> Learn more <FaArrowRight /></p>
-            </div>
-            <div className="flex  w-full">
+        <div className="bg-white pt-16 pb-[50px] w-full ">
+            <h1 className="sm:text-[23px] text-center font-poppins text-orange text-[20px] font-semibold"> Impact Numbers </h1>
+            <div>
                 <Impacts />
-            </div>    
+            </div>
             </div>
             {/* Events and Updates Section */}
             <div className="relative pb-[0px]">
 
-                <div className=" w-full h-[800px] bg-cover bg-center bg-fixed " style={{backgroundImage: `url(${EventUpdateBgImage})`}}>
-                    {/* <img className="w-full pb-[30px] h-[850px] relative object-cover" src={EventUpdateBgImage} alt="" /> */}
-                    <div className="absolute h-[800px] bg-cover w-full bg-[#EEF3F9]/50 inset-0 pt-10 sm:pt-16">
-                        <h1 className="text-center text-[30px] sm:text-[40px] text-orange font-semibold font-poppins"> Events and Updates </h1>
-                        <div className="absolute right-[10px] sm:right-14 gap-3 top-26  sm:top-18   flex ">
-                            <IoIosArrowDropleft onClick={HandlePrevEvent} className="text-[40px] hover:text-orange text-[#e84e249e]" />
-                            <IoIosArrowDroprightCircle onClick={HandleNextEvent} className="text-[40px] hover:text-[#e84e249e] text-orange" />
-                        </div>
-                       
-                        <div className="mt-16 flex justify-around flex-wrap sm:flex-nowrap  ">
-                            {/* Display One event on mobile side */}
-                            <div className="w-full sm:hidden sm:w-full ml-10 mt-5">
-                                <EventUpdate
-                                    image={events[GetEventIndex(0)].image}
-                                    date={events[GetEventIndex(0)].date}
-                                    title={events[GetEventIndex(0)].title}
-                                    description={events[GetEventIndex(0)].description}
-                                />
-                            </div>
-                            <div className="hidden sm:flex justify-around w-full">
-                                {
-                                    [0,1,2].map((offset) => (
-                                        <EventUpdate 
-                                            key={offset}
-                                            image={events[GetEventIndex(offset)].image}
-                                            date={events[GetEventIndex(offset)].date}
-                                            title={events[GetEventIndex(offset)].title}
-                                            description={events[GetEventIndex(offset)].description}
-                                        />
-                                    ))
-                                }
-                            </div>
-                        </div>
-                        {/* Dots for current position */}
-                        <div className="flex justify-center items-center gap-6 mt-13">
-                            {
-                                events.map((_, index) => {
-                                    return <div key={index} className={`w-[9px]  h-[9px] rounded-full  ${index === CurrentEvent? 'bg-orange' : 'bg-orange/55'}  rounded-full `}></div>
-                                }
-                                )
-                            }
-                        </div>
-                        
-                    </div>
-                </div>
+               <EventUpdate />
             </div>
             {/* Book an Event */}
             <div className=" mb-20">
