@@ -56,6 +56,7 @@ import { IoArrowForwardCircle } from "react-icons/io5";
 import Footer from "../Components/footer";
 import BookNow from "../Components/BookNow";
 import { useState } from "react";
+import OurCommunity from "../Components/OurCommunity";
 
 
 const testmonials = [
@@ -143,7 +144,7 @@ function Home (){
             </div>
             </div>
             {/* Events and Updates Section */}
-            <div className="relative pb-[0px]">
+            <div className=" w-full pb-[0px]">
 
                <EventUpdate />
             </div>
@@ -177,51 +178,15 @@ function Home (){
                 </div>
             </div>
             {/* Testmonial Section */}
-            <div className="w-full sm:h-[400px] relative   justify-around">
-                <img className="w-full  sm:h-[780px] absolute  bg-cover" src={TestMonialBgImage} alt="" />
-                <div className="w-full bg-black/60 absolute h-[800px] sm:h-[780px]">
-                    <div className=" text-center mt-20 font-poppins">
-                            <h1 className=" text-[30px] font-semibold text-orange "> #WhyiRise</h1>
-                            <p className=" w-[350px] ml-5 sm:w-[500px] sm:ml-[30%] mt-3 text-white"> We are iRisehub, a community of disruptors and dreamers, fostering innovation, entrepreneurship, and technology to build a thriving future for Somalia.</p>
-                    </div>
-                    <div className="absolute flex gap-2 justify-end ml-[-20px] sm:ml-0 top-15 sm:top-60 sm:justify-between sm:px-[20px] px-0 w-full">
-                        <IoArrowBackCircleOutline onClick={HandlePrevComment} className="text-orange text-[50px] hover:text-white mt-48" />
-                        <IoArrowForwardCircle onClick={HandleNextComment} className="text-orange text-[50px] hover:text-white mt-48" />
-                    </div>
-                    <div className="flex justify-around mt-10">
-                        {/* Display One event on mobile side */}
-                        <div className="w-full sm:hidden sm:w-full ml-10 mt-5">
-                        <Testmonial 
-                            key={CurrentComment}
-                            image={testmonials[CurrentComment].image}
-                            name={testmonials[CurrentComment].name}
-                            description={testmonials[CurrentComment].describtion}
-                         />
-                        </div>
-                        {/* Display 3 events on desktop */}
-                        <div className="w-full hidden sm:flex ml-[8%]  gap-10 ">
-                            {
-                                [0,1,2].map((offset) => (
-                                    <Testmonial
-                                     key={offset}
-                                     image={testmonials[GetCommentIndex(offset)].image}
-                                     name={testmonials[GetCommentIndex(offset)].name}
-                                     description={testmonials[GetCommentIndex(offset)].describtion}
-
-                                     />
-                                ))
-                            }
-                        </div>
-                    </div>
-                    <div className="flex gap-3 mt-10 sm:mt-15 inset-0 justify-center">
-                        {testmonials.map((_,index) => {
-                            return <div key={index} className={`w-[30px] h-[8px] rounded-lg ${index === CurrentComment ? "bg-transparent w-[40px] border-[1.5px] border-[#D9D9D9] " : "bg-[#D9D9D9]"} `}></div>
-                        })}
-                    </div>
-                </div>
+            <div className="w-full h-[400px]">
+                <Testmonial />
+            </div>
+            {/* Our Community */}
+            <div className="w-full ">
+                <OurCommunity />
             </div>
             {/* Footer */}
-            <div className="sm:mt-[450px] mt-[800px] z-10 absolute w-full ">
+            <div className="sm:mt-[50px] mt-[800px] z-10 absolute w-full ">
                 <Footer />
             </div>
         </div>

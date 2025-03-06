@@ -100,7 +100,7 @@ function EventUpdate() {
                     <FaCirclePlay className="text-white text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"     />
                 </div>
             </div> 
-            <div className="absolute -right-280 flex  px-4 gap-5 w-full top-20">
+            <div className="absolute   flex  px-4 gap-5 w-full top-6">
                 <FaChevronLeft onClick={HandlePrevEvent} className="cursor-pointer text-[25px] text-orange hover:text-blue" />
                 <FaChevronCircleRight onClick={HandleNextEvent} className="cursor-pointer text-[25px] text-orange hover:text-blue" />
             </div>
