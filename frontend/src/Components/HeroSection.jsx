@@ -16,24 +16,25 @@ function HeroSection (){
                     <div className="animate-scroll inline-flex gap-10">
                         {/* First set */}
                         <div className="flex gap-10 whitespace-nowrap">
-                            <h1 className="font-semibold font-poppins text-white text-4xl"> iRisehub </h1>
-                            <h1 className="font-semibold font-poppins text-orange text-4xl"> iRisehub </h1>
-                            <h1 className="font-semibold font-poppins text-white text-4xl"> iRisehub </h1>
-                            <h1 className="font-semibold font-poppins text-orange text-4xl"> iRisehub </h1>
-                            <h1 className="font-semibold font-poppins text-white text-4xl"> iRisehub </h1>
-                            <h1 className="font-semibold font-poppins text-orange text-4xl"> iRisehub </h1>
+                            <h1 className="font-semibold font-poppins text-white text-[25px]"> iRisehub </h1>
+                            <h1 className="font-semibold font-poppins text-orange text-[25px]"> iRisehub </h1>
+                            <h1 className="font-semibold font-poppins text-white text-[25px]"> iRisehub </h1>
+                            <h1 className="font-semibold font-poppins text-orange text-[25px]"> iRisehub </h1>
+                            <h1 className="font-semibold font-poppins text-white text-[25px]"> iRisehub </h1>
+                            <h1 className="font-semibold font-poppins text-orange text-[25px]"> iRisehub </h1>
                         </div>
                         {/* Second set (exact duplicate) */}
                         <div className="flex gap-10 whitespace-nowrap">
-                            <h1 className="font-semibold font-poppins text-white text-4xl"> iRisehub </h1>
-                            <h1 className="font-semibold font-poppins text-orange text-4xl"> iRisehub </h1>
-                            <h1 className="font-semibold font-poppins text-white text-4xl"> iRisehub </h1>
-                            <h1 className="font-semibold font-poppins text-orange text-4xl"> iRisehub </h1>
-                            <h1 className="font-semibold font-poppins text-white text-4xl"> iRisehub </h1>
-                            <h1 className="font-semibold font-poppins text-orange text-4xl"> iRisehub </h1>
+                            <h1 className="font-semibold font-poppins text-white text-[25px]"> iRisehub </h1>
+                            <h1 className="font-semibold font-poppins text-orange text-[25px]"> iRisehub </h1>
+                            <h1 className="font-semibold font-poppins text-white text-[25px]"> iRisehub </h1>
+                            <h1 className="font-semibold font-poppins text-orange text-[25px]"> iRisehub </h1>
+                            <h1 className="font-semibold font-poppins text-white text-[25px]"> iRisehub </h1>
+                            <h1 className="font-semibold font-poppins text-orange text-[25px]"> iRisehub </h1>
                         </div>
                     </div>
                 </div>
+                
             </div>
             
         </div>
