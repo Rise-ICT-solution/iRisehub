@@ -90,8 +90,9 @@ function BriefAboutiRise (){
                 }}
             ></div>
         </div>
-
-        <h1 className="  text-[30px] text-center  font-poppins font-semibold text-orange "> A brief about iRisehub</h1>
+        <div className="flex justify-center  items-center">
+            <h1 className="  text-[30px] text-center  font-poppins font-semibold text-orange border-b-4 w-[350px]   "> A brief about iRisehub</h1>
+        </div>
         <div className=" flex justify-around ">
             <div className="w-[400px] mt-30 transition-all duration-500 ease-in-out">
                 <h1 className="  text-[30px] font-poppins font-semibold text-orange "> {ActiveSection} </h1>

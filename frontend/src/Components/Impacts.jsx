@@ -14,21 +14,25 @@ const impactData = [
         program: "Mentors",
         number: 80,
         suffix: "+",
-        prefix: ""
+        prefix: "",
+        bgColor: "bg-[#051C3C]"
+        
     },
     {
         icon: HiOutlineClipboardDocumentList,
         program: "Participants",
         number: 900,
         suffix: "+",
-        prefix: ""
+        prefix: "",
+        bgColor: "bg-[#FFBC01]"
     },
     {
         icon: HiOutlineUsers,
         program: "Programs",
         number: 100,
         suffix: "+",
-        prefix: ""
+        prefix: "",
+        bgColor: "bg-[#C1EE4B]"
 
     },
     {
@@ -36,49 +40,56 @@ const impactData = [
         program: "Investment",
         number: 1500,
         suffix: "+",
-        prefix: "$"
+        prefix: "$",
+        bgColor: "bg-[#CFB7F5]"
     },
     {
         icon: FaHandHoldingDollar,
         program: "Partners",
         number: 10,
         suffix: "+",
-        prefix: ""
+        prefix: "",
+        bgColor: "bg-[#051C3C]"
     },
     {
         icon: LiaHandHoldingUsdSolid,
         program: "Investment",
         number: 720,
         suffix: "+",
-        prefix: "$"
+        prefix: "$",
+        bgColor: "bg-[#FFBC01]"
     },
     {
         icon: TbBrandNetbeans,
         program: "Partners",
         number: 10,
         suffix: "+",
-        prefix: ""
+        prefix: "",
+        bgColor: "bg-[#C1EE4B]"
     },
     {
         icon: FaHandHoldingDollar,
         program: "Investment",
         number: 720,
         suffix: "+",
-        prefix: "$"
+        prefix: "$",
+        bgColor: "bg-[#CFB7F5]"
     },
     {
         icon: TbBrandNetbeans,
         program: "Partners",
         number: 30,
         suffix: "+",
-        prefix: "$"
+        prefix: "$",
+        bgColor: "bg-[#051C3C]"
     },
     {
         icon: FaHandHoldingDollar,
         program: "Investment",
         number: 230,
         suffix: "+",
-        prefix: "$"
+        prefix: "$",
+        bgColor: "bg-[#FFBC01]"
 
 
     },
@@ -87,14 +98,16 @@ const impactData = [
         program: "Partners",
         number: 20,
         suffix: "+",
-        prefix: "$"
+        prefix: "$",
+        bgColor: "bg-[#C1EE4B]"
     },
     {
         icon: FaHandHoldingDollar,
         program: "Investment",
         number: 230,
         suffix: "+",
-        prefix: "$"
+        prefix: "$",
+        bgColor: "bg-[#CFB7F5]"
     },
   
    
@@ -115,7 +128,7 @@ function Impacts() {
             {/* // > key={index} className=" group perspective"> */}
                     <div className="w-[140px] relative  h-[180px]">
                         {/* Front side */}
-                        <div className="absolute w-full h-full bg-orange backface-hidden text-center justify-center items-center flex flex-col rounded-lg transform transition-transform duration-500 group-hover:rotate-y-180">
+                        <div className={`absolute w-full h-full  backface-hidden text-center ${item.bgColor} justify-center items-center flex flex-col rounded-lg transform transition-transform duration-500 group-hover:rotate-y-180`}>
                             <item.icon className="text-[60px] text-white" />
                             <h1 className="text-[20px] text-white font-medium font-poppins">
                                 {item.program}

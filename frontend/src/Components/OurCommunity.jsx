@@ -8,7 +8,7 @@ function OurCommunity (){
         "https://img.freepik.com/free-photo/african-american-man-white-t-shirt_273609-14755.jpg?t=st=1741257442~exp=1741261042~hmac=cf6431dc45319d1189696a1eeb910d8ebf6d2badfe047639fca0c7006ca107be&w=1800",
         "https://img.freepik.com/free-photo/close-up-skin-pores-face-care-routine_23-2149383448.jpg?t=st=1741257917~exp=1741261517~hmac=e5078535cd6577fed478e5fb79beafe92f4a0cde2159bc5cc359bd293b17ec91&w=740"
     ]
-    return <div className="w-full mt-50 flex justify-around ">
+    return <div className="w-full mt-39 bg-orange/10   p-10 flex justify-around ">
         <div className="w-[250px] mt-35 ">
             <h1 className="text-4xl font-semibold font-poppins text-orange border-b-3 pb-6 text-center border-b-orange"> Join iRisehub Community</h1>
         </div>

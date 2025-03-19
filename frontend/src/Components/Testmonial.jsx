@@ -10,7 +10,7 @@ const TestmonialData = [
     {
         Image: "https://img.freepik.com/free-photo/medium-shot-male-flight-attendant-posing_23-2150312701.jpg?t=st=1740946881~exp=1740950481~hmac=2883ea9221f37dd7ac8d45eeffae8ec4aabe33ca892fa3b6794e87429c160487&w=740",
         title: "Student",
-        Name: "Maria Omar",
+        Name: "Ahmed Omar",
         Description: "I can only say that women and girls in general must attend these kinds of bootcamps. It gives us a sense of owning and being part of the change."
     },
     {
@@ -30,7 +30,9 @@ function Testmonial (){
         setTestmonials(ReOrderImageHovered);
     }
     return <div className="mt-15 w-full px-[30px]">
-        <h1 className="text-3xl font-semibold font-poppins text-orange  text-center">#WhyiRise </h1>
+        <div className="w-[160px] flex justify-center items-center mx-auto">
+            <h1 className="text-3xl font-semibold font-poppins text-orange border-b-4 border-orange  text-center">#WhyiRise </h1>
+        </div>
         <div className="flex justify-between mt-8 items-center">
             <div className="w-[350px]  font-poppins">
                 <h1 className="font-semibold mb-2 text-[20px] text-orange">{testmonials[0].Name}</h1>
