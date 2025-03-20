@@ -9,6 +9,7 @@ import { FaSquareYoutube } from "react-icons/fa6";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import { useState, useEffect, useRef } from "react";
 import {Link} from "react-router-dom";
+import TextSlider from "./textslidery";
 
 
 function Header (){
@@ -79,7 +80,14 @@ function Header (){
                     <h1 style={{display: IsMenuOpen == true  ? "none" : ""}} onClick={MenuOpen} className="bg-orange px-[10px] py-[5px] text-white font-semibold hover:underline"> Menu </h1>
                 </div>
                 {/* The Huge irisehub Text  */}
-                <h1 className={`transition-all duration-700 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[130px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "} `}> {'<irisehub>'} </h1>
+                {/* <h1 className={`transition-all duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[130px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "} `}> {'<irisehub>'} </h1> */}
+                {/* <TextSlider /> */}
+                {/* <h1 className={`transition-all flex justify-center items-center duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[130px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "} `}> 
+                
+                    <span className={`transition-all duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[10px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "}`}>{`<`}</span>
+                    <span className={`transition-all duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[10px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "}`}> {'irisehub'} </span>
+                    <span className={`transition-all duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[10px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "}`}>{`>`} </span>
+                </h1> */}
             </div>
         </div>
         

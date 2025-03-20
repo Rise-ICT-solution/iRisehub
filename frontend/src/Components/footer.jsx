@@ -6,8 +6,8 @@ import iRiseLogo from "../Images/iRisehubLogo.png"
 
 function Footer (){
     return <div className="sm:w-full w-[350px] bg-orange px-[10px]  pb-5 ">
-            <div className="sm:mt-[0px] flex justify-center items-center mb-5 sm:mb-0 ml-13 sm:ml-0 ">
-                <img className="w-[250px] h-[200px]" src={iRiseLogo} alt="" />
+            <div className="sm:mt-[0px]  flex justify-center items-center ml-13 sm:ml-0 ">
+                <img className="w-[300px] filter invert brightness-0 h-[230px]" src={iRiseLogo} alt="" />
                 {/* <div className="flex items-center mt-[-50px]">
                     <input type="text"  placeholder="Enter your email" className="w-[150px] pr-[12px] outline-none border-orange border-2 h-[40px] rounded-[5px] px-2"/>
                     <button className="w-[100px] text-[14px] ml-[-10px] h-[40px] rounded-[5px]   bg-orange text-white"> Subscribe </button>

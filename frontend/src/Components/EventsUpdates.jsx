@@ -100,9 +100,9 @@ function EventUpdate() {
                     <FaCirclePlay className="text-white text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"     />
                 </div>
             </div> 
-            <div className="absolute   flex  px-4 gap-5 w-full top-6">
-                <FaChevronLeft onClick={HandlePrevEvent} className="cursor-pointer text-[25px] text-orange hover:text-blue" />
-                <FaChevronCircleRight onClick={HandleNextEvent} className="cursor-pointer text-[25px] text-orange hover:text-blue" />
+            <div className="absolute   flex justify-between px-22 gap-5 w-full top-6">
+                <FaChevronLeft onClick={HandlePrevEvent} className="cursor-pointer text-[30px] text-orange hover:text-blue" />
+                <FaChevronCircleRight onClick={HandleNextEvent} className="cursor-pointer text-[30px] text-orange hover:text-blue" />
             </div>
             <div className={`w-[500px] mt-16 font-poppins transition-all duration-600 ease-in-out ${getSlideClass()}`}>
                 <h3 className=" font-medium">{AllEventsData[CurrentEvent].date}</h3>
