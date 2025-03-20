@@ -1,4 +1,4 @@
-import iRisehubVideo from "../Video/iRisehubIntro.mp4"
+import iRisehubVideo from "../Videos/iRisehubIntro.mp4"
 import Header from "../Components/Header"
 
 

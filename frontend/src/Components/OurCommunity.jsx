@@ -75,7 +75,7 @@ function OurCommunity (){
                     <h1 className=" font-poppins font-semibold text-[11px] text-white">iRisehub Community</h1>
                 </div>
                 <div className="bg-orange   w-[140px] h-[30px] rounded-[20px]">
-                    <input className="w-full px-2 font-poppins text-white text-[11px] text-center items-center outline-none " placeholder="Your email" type="text"  />
+                    <input className="w-full px-2 font-poppins text-white text-[11px] text-center items-center outline-none " placeholder="Enter Your Email Here" type="text"  />
                 </div>
                 <div className="bg-orange flex justify-center items-center w-[70px] h-[30px] rounded-[20px]">
                     <h1 className="font-poppins font-semibold text-[11px] text-white">Join Us</h1>
