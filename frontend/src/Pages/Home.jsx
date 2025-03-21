@@ -138,7 +138,7 @@ function Home (){
             <BriefAboutiRise />
         </div>
         {/* Sample Ecosystem code */}
-        <SampleEco />
+        {/* <SampleEco /> */}
 
         {/* Impact NUmbers Section  */}
         <div className="bg-white pt-16 pb-[50px] w-full ">

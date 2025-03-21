@@ -1,6 +1,6 @@
 import iRisehubLogo from "../Images/iRisehubLogo.png"
 // import { FaBarsStaggered } from "react-icons/fa6";
-import iRisehubVideo from "../Videos/iRisehubIntro.mp4"
+// import iRisehubVideo from "../Videos/iRisehubIntro.mp4"
 import { MdOutlineClose } from "react-icons/md";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
