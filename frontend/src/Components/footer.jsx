@@ -5,15 +5,15 @@ import { FaSquareYoutube } from "react-icons/fa6";
 import iRiseLogo from "../Images/iRisehubLogo.png"
 
 function Footer (){
-    return <div className="sm:w-full w-[350px] bg-orange px-[10px]  pb-5 ">
-            <div className="sm:mt-[0px]  flex justify-center items-center ml-13 sm:ml-0 ">
+    return <div className="sm:w-full w-full sm:w-[350px] bg-orange px-[10px]  pb-5 ">
+            <div className="sm:mt-[0px]  flex justify-center items-center ml-0 sm:ml-0 ">
                 <img className="w-[300px] filter invert brightness-0 h-[230px]" src={iRiseLogo} alt="" />
                 {/* <div className="flex items-center mt-[-50px]">
                     <input type="text"  placeholder="Enter your email" className="w-[150px] pr-[12px] outline-none border-orange border-2 h-[40px] rounded-[5px] px-2"/>
                     <button className="w-[100px] text-[14px] ml-[-10px] h-[40px] rounded-[5px]   bg-orange text-white"> Subscribe </button>
                 </div> */}
             </div>
-        <div className="sm:flex justify-around">
+        <div className="sm:flex sm:justify-around grid grid-cols-2 gap-y-10 sm:mt-0 -mt-15">
             <ul className=" leading-[28px] ml-5 sm:ml-0 text-white mt-6 sm:mt-0 font-poppins ">
                 <li className="font-semibold text-[18px] font-poppins mb-2"> Quick Links </li>
                 <li className="  hover:text-black"> What We Do </li>

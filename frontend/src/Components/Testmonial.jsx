@@ -19,6 +19,12 @@ const TestmonialData = [
         Name: "Ayaan Mire ",
         Description: "Dalbile will open up substantial opportunities, with access to corporate partners, investors and government collaborations through iRise Hub."
     },
+    {
+        Image: "https://img.freepik.com/free-photo/confident-entrepreneur-looking-camera-with-arms-folded-smiling_1098-18840.jpg?t=st=1742722415~exp=1742726015~hmac=fb14bc3aa3830be163923cc67f56b54d1eace725489646881b6e98d62e5814fd&w=740",
+        title: "Entreprenuer",
+        Name: "Mohamed Amin ",
+        Description: "SomTech will unlock significant potential, providing access to strategic partnerships, investor networks, and government collaborations through iRise Hub."
+    },
 ]
 function Testmonial (){
     const [testmonials, setTestmonials] = useState(TestmonialData)
@@ -33,21 +39,23 @@ function Testmonial (){
         <div className="w-[160px] flex justify-center items-center mx-auto">
             <h1 className="text-3xl font-semibold font-poppins text-orange border-b-4 border-orange  text-center">#WhyiRise </h1>
         </div>
-        <div className="flex justify-between mt-8 items-center">
+        <div className="sm:flex justify-between mt-8 items-center">
             <div className="w-[350px]  font-poppins">
                 <h1 className="font-semibold mb-2 text-[20px] text-orange">{testmonials[0].Name}</h1>
                 <p>{testmonials[0].Description}</p>
             </div>
-            <div className="flex gap-5 ">
+            <div className="flex gap-2 sm:gap-5 sm:mt-0 mt-7 ">
                 {
                     testmonials.map((item, index) => (
-                        <div key={index} onMouseEnter={() => HandleHoverImage(index)} className={` group ${index === 0 ? "w-[400px]" : "w-[180px]"}  relative h-[450px]`}>
+                        <div key={index} onMouseEnter={() => HandleHoverImage(index)} className={` group ${index === 0 ? " w-[200px] sm:w-[400px]" : " w-[80px] sm:w-[120px]"}  relative h-[220px] sm:h-[450px]`}>
                             <img className=" object-cover rounded-[10px] object-center absolute h-full w-full" src={item.Image} alt={item.Image} />
                             {/* <div className=" absolute ml-10 leading-6 flex-col  bottom-16 w-full">
                             </div> */}
-                            <div className="absolute w-full h-[250px] bottom-0 bg-gradient-to-t from-black pt-40 pl-5 rounded-b-lg   to-transparent ">
-                                <h1 className={`text-orange font-semibold ${index === 0 ? "" : "opacity-0"} font-poppins text-[20px]`}> {item.title} </h1>
-                                <h1 className={`text-white font-poppins ${index === 0 ? "" : "-right-6 bottom-16 absolute transform rotate-270"} text-[20px]`}> {item.Name} </h1>
+                            <div className="absolute w-full sm:mt-0 mt-[100px] h-[200px] sm:h-[250px] bottom-0 bg-gradient-to-t from-black  rounded-b-lg   to-transparent ">
+                                <div className="absolute w-full h-[400px] w-full sm:h-[300px] sm:pt-40 pt-35 pl-2 sm:pl-5">
+                                    <h1 className={`text-orange font-semibold ${index === 0 ? "" : "opacity-0"} font-poppins text-[13px] sm:text-[20px]`}> {item.title} </h1>
+                                    <h1 className={`text-white font-poppins ${index === 0 ? "" : "sm:right-[-30px] -right-3 sm:bottom-30 bottom-60 absolute transform rotate-270"} text-[18px] leading-5 sm:leading-9 sm:text-[20px]`}> {item.Name} </h1>
+                                </div>
                             </div>
                         </div>
                     ))

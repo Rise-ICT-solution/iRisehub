@@ -77,34 +77,34 @@ function EventUpdate() {
             : 'translate-x-full';
     };
 
-    return <div className="bg-orange/10 relative w-full h-[550px] pt-20">
-        <div className="flex justify-center gap-20 overflow-hidden">
-            <div className={`w-[500px] relative transition-all duration-600 ease-in-out ${getSlideClass()}`}>
+    return <div className="bg-orange/10 relative w-full sm:h-[550px] pt-20">
+        <div className="sm:flex justify-center gap-20 overflow-hidden">
+            <div className={`sm:w-[500px] sm:ml-0 ml-7 w-[200px] relative transition-all duration-600 ease-in-out ${getSlideClass()}`}>
                 {/* Top left squared box */}
-                <div className="w-[100px]  h-[100px] absolute -ml-6 mt-20 bg-transparent border-3 border-blue/70 rounded-lg"></div>
+                <div className="w-[100px]  h-[100px] absolute sm:ml-[-20px] ml-[10px] mt-20 bg-transparent border-3 border-blue/70 rounded-lg"></div>
                 {/*  right squared box */}
-                <div className="w-[100px]  h-[100px] absolute ml-[320px] mt-30 bg-transparent border-3 border-blue/70 rounded-lg"></div>
+                <div className="w-[100px]  h-[100px] absolute sm:ml-[320px] ml-[260px] mt-[10px] sm:mt-30 bg-transparent border-3 border-blue/70 rounded-lg"></div>
                 {/*  left grey rounded box */}
-                <div className="w-[100px]  h-[150px] absolute -ml-3 mt-30   bg-gray-200 rounded-lg"></div>
+                <div className="w-[100px]  h-[150px] absolute  sm:ml-[-13px] ml-[20px] mt-30   bg-gray-200 rounded-lg"></div>
                 {/* Main/primary Event Image */}
-                <div className="w-[380px] h-[380px] relative z-10">
+                <div className="sm:w-[380px] w-[300px] h-[300px] sm:ml-0 ml-11 sm:h-[380px] relative z-10">
                     <img className=" object-cover w-full h-full rounded-lg" src={AllEventsData[CurrentEvent].PrimaryImage} alt="" />
                 </div>
                 {/* Small image in the right side of the main image */}
-                <div className="bg-orange border-4 border-white top-50 rounded-lg z-10 right-12 mt-[-30px] absolute w-[140px] shadow-lg shadow-gray-500 h-[140px]">
+                <div className="bg-orange s border-4 border-white top-50 rounded-lg z-10 sm:right-12 -right-45 mt-[-80px] sm:mt-[-30px] absolute w-[140px] shadow-lg shadow-gray-500 h-[140px]">
                     <img className="w-full h-full object-cover" src={AllEventsData[CurrentEvent].SecondaryImage} alt="" />
                 </div>
                 {/* Event Video */}
-                <div className="bg-orange border-white top-50 -ml-10  z-10  mt-[30px] absolute w-[150px] shadow-lg h-[100px]">
+                <div className="bg-orange border-white top-50 sm:ml-[-50px] ml-[16px]  z-10 mt-[-10px] sm:mt-[30px] absolute w-[150px] shadow-lg h-[100px]">
                     <img className="w-full h-full object-cover" src="https://img.freepik.com/free-photo/process-creating-stand-up-comedy_23-2151053483.jpg?t=st=1740835185~exp=1740838785~hmac=022b52df30150dce3fc106ecad618a898ccf118ff085aece23d19e4efc49e531&w=1800" alt="" />
                     <FaCirclePlay className="text-white text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"     />
                 </div>
             </div> 
-            <div className="absolute   flex justify-between px-22 gap-5 w-full top-6">
+            <div className="absolute   flex justify-between sm:px-22 px-10 gap-5 w-full top-6">
                 <FaChevronLeft onClick={HandlePrevEvent} className="cursor-pointer text-[30px] text-orange hover:text-blue" />
                 <FaChevronCircleRight onClick={HandleNextEvent} className="cursor-pointer text-[30px] text-orange hover:text-blue" />
             </div>
-            <div className={`w-[500px] mt-16 font-poppins transition-all duration-600 ease-in-out ${getSlideClass()}`}>
+            <div className={`sm:w-[500px] sm:px-0 px-[20px] w-[355px] mt-16 font-poppins transition-all duration-600 ease-in-out ${getSlideClass()}`}>
                 <h3 className=" font-medium">{AllEventsData[CurrentEvent].date}</h3>
                 <h1 className="text-[25px] mt-1 font-semibold"> {AllEventsData[CurrentEvent].title} </h1>
                 <p className="mt-1"> {AllEventsData[CurrentEvent].content}</p>
@@ -120,7 +120,7 @@ function EventUpdate() {
             </div>
         </div>
         {/* All Sliding Events Dots */}
-        <div className="flex gap-2 justify-center absolute bottom-10 items-center w-full">
+        <div className="flex gap-2 justify-center absolute bottom-8 sm:bottom-10 items-center w-full">
             {AllEventsData.map((_, index) => (
                 <button
                     key={index}
@@ -137,12 +137,7 @@ function EventUpdate() {
             ))}
         </div>
         <div className="flex justify-center items-center gap-6 mt-13">
-            {/* {
-                events.map((_, index) => {
-                    return <div key={index} className={`w-[9px]  h-[9px] rounded-full  ${index === CurrentEvent? 'bg-orange' : 'bg-orange/55'}  rounded-full `}></div>
-                }
-                )
-            } */}
+          
         </div>
         
     </div>

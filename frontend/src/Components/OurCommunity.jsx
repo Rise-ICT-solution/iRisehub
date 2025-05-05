@@ -8,19 +8,19 @@ function OurCommunity (){
         "https://img.freepik.com/free-photo/african-american-man-white-t-shirt_273609-14755.jpg?t=st=1741257442~exp=1741261042~hmac=cf6431dc45319d1189696a1eeb910d8ebf6d2badfe047639fca0c7006ca107be&w=1800",
         "https://img.freepik.com/free-photo/close-up-skin-pores-face-care-routine_23-2149383448.jpg?t=st=1741257917~exp=1741261517~hmac=e5078535cd6577fed478e5fb79beafe92f4a0cde2159bc5cc359bd293b17ec91&w=740"
     ]
-    return <div className="w-full mt-39 bg-orange/10   p-10 flex justify-around ">
-        <div className="w-[250px] mt-35 ">
+    return <div className="w-full sm:mt-39 mt-18 bg-orange/10 pb-[30px] sm:pb-[20px] sm:pl-0   sm:p-10 flex sm:flex-row flex-col sm:pl-50 pl-0 justify-around items-center ">
+        <div className="w-[350px]  sm:pt-0 pt-10 sm:pb-0 pb-10"> 
             <h1 className="text-4xl font-semibold font-poppins text-orange border-b-3 pb-6 text-center border-b-orange"> Join iRisehub Community</h1>
         </div>
-        <div className="flex items-center flex-col">
+        <div className="flex items-center flex-col  w-full ">
             {/* Outer most circling images  */}
-            <div className="relative h-[350px] w-[350px] flex justify-center items-center animate-spin-slow ">
+            <div className="relative sm:h-[350px] w-[350px] sm:w-[350px] h-[350px] flex justify-center items-center animate-spin-slow ">
                 {
                     Array.from({ length: 15}).map((_, index) => (
                         <img key={index}  
-                        className={` absolute w-[50px] h-[50px] object-cover rounded-full`} 
+                        className={` absolute sm:w-[50px] w-[40px] sm:h-[50px] h-[40px] object-cover rounded-full`} 
                         style={{
-                            transform:  `rotate(${(360/15) * index}deg) translate(150px) rotate(-${(360/15) * index}deg)`,
+                            transform:  `rotate(${(360/15) * index}deg)  translate(150px) rotate(-${(360/15) * index}deg)`,
                             transformOrigin: `center`
                         }}  
                         // src="https://img.freepik.com/free-photo/curly-man-with-broad-smile-shows-perfect-teeth-being-amused-by-interesting-talk-has-bushy-curly-dark-hair-stands-indoor-against-white-blank-wall_273609-17092.jpg?t=st=1741089768~exp=1741093368~hmac=b0b14a88c813c09e92b6a9e733ddfffd57e4cf056e1bc20f985fa96825ef7b3a&w=1800" alt="" 
@@ -33,7 +33,7 @@ function OurCommunity (){
                 {
                     Array.from({ length: 7}).map((_, index) => (
                         <img key={index}  
-                        className={` absolute w-[50px] h-[50px] object-cover rounded-full`} 
+                        className={` absolute sm:w-[50px] w-[40px] sm:h-[50px] h-[40px] object-cover rounded-full`} 
                         style={{
                             transform:  `rotate(${(360/7) * index}deg) translate(90px) rotate(-${(360/7) * index}deg)`,
                             transformOrigin: `center`
@@ -46,7 +46,7 @@ function OurCommunity (){
                 {
                     Array.from({ length: 7}).map((_, index) => (
                         <img key={index}  
-                        className={` absolute w-[50px] h-[50px] object-cover rounded-full`} 
+                        className={` absolute sm:w-[50px] w-[40px] sm:h-[50px] h-[40px] object-cover rounded-full`} 
                         style={{
                             transform:  `rotate(${(360/7) * index}deg) translate(90px) rotate(-${(360/7) * index}deg)`,
                             transformOrigin: `center`
