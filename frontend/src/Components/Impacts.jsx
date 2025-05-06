@@ -118,7 +118,7 @@ function Impacts() {
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return (
-        <div className="grid grid-cols-6  ml-10 gap-y-10 mt-12 gap-4 justify-center items-center">
+        <div className="grid grid-cols-3 sm:grid-cols-6 ml-5 sm:ml-10 gap-y-7 sm:gap-y-10 mt-12  justify-center items-center">
             {impactData.map((item, index) => (
                 <div
                     key={index}
@@ -126,11 +126,11 @@ function Impacts() {
                     onMouseEnter={() => setHoveredIndex(index)}
                     onMouseLeave={() => setHoveredIndex(null)}>
             {/* // > key={index} className=" group perspective"> */}
-                    <div className="w-[140px] relative  h-[180px]">
+                    <div className="sm:w-[140px] relative w-[100px] h-[130px]  sm:h-[180px]">
                         {/* Front side */}
                         <div className={`absolute w-full h-full  backface-hidden text-center ${item.bgColor} justify-center items-center flex flex-col rounded-lg transform transition-transform duration-500 group-hover:rotate-y-180`}>
-                            <item.icon className="text-[60px] text-white" />
-                            <h1 className="text-[20px] text-white font-medium font-poppins">
+                            <item.icon className="text-[40px] sm:text-[60px] text-white" />
+                            <h1 className="sm:text-[20px] text-white font-medium font-poppins">
                                 {item.program}
                             </h1>
                         </div>
@@ -139,13 +139,13 @@ function Impacts() {
                             {/* {
                                 currentIndex === index && ( */}
                                     <div className=" flex flex-col justify-center items-center" >
-                                        <h1 className="text-[30px] text-orange font-semibold font-poppins">
+                                        <h1 className=" text-[30px] sm:text-[30px] text-orange font-semibold font-poppins">
                                             {hoveredIndex === index && (
                                                <>{item.prefix}<CountUp key={index} start={0} end={item.number} duration={2} />{item.suffix}</>
                                             )}
                                         </h1>
                                         {/* <h1 className="text-[30px] text-orange font-semibold font-poppins"><CountUp key={index} start={0} end={item.number} duration={2} /></h1> */}
-                                        <h1 className="text-[18px] text-orange text-center font-medium font-poppins">
+                                        <h1 className="sm:text-[18px] text-[16px] text-orange text-center font-medium font-poppins">
                                             {item.program}
                                         </h1>
                                     </div>

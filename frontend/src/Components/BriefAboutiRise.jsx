@@ -15,7 +15,7 @@ function BriefAboutiRise (){
         "How we do it":
             "Through technology, creative solutions, mentorship, and collaborative workspaces, we bring together like-minded individuals to create impactful projects that drive change.",
     }
-    return <div className="w-full  mt-0 pt-20 pb-[50px]  relative overflow-hidden">
+    return <div className="w-full  -mt-85 sm:mt-0 pt-20 pb-[50px]  relative overflow-hidden">
         {/* Unique Modern Tech Background */}
         <div className="absolute inset-0 -z-10">
             {/* Morphing Gradient Background */}
@@ -91,47 +91,47 @@ function BriefAboutiRise (){
             ></div>
         </div>
         <div className="flex justify-center  items-center">
-            <h1 className="  text-[30px] text-center  font-poppins font-semibold text-orange border-b-4 w-[350px]   "> A brief about iRisehub</h1>
+            <h1 className="  text-[30px] text-center  font-poppins font-semibold text-orange border-b-4 mb-10 sm:mb-0 sm:w-[350px]   "> A brief about iRisehub</h1>
         </div>
-        <div className=" flex justify-around ">
-            <div className="w-[400px] mt-30 transition-all duration-500 ease-in-out">
+        <div className=" sm:flex justify-around ">
+            <div className="sm:w-[400px] w-[370px] sm:px-0 px-[20px] mt-10 sm:mt-30 transition-all duration-500 ease-in-out">
                 <h1 className="  text-[30px] font-poppins font-semibold text-orange "> {ActiveSection} </h1>
                 <p className="mt-1">
                     {Sections[ActiveSection]}
                 </p>
             
             </div>
-            <div className=" flex flex-col items-center relative">
+            <div className="flex flex-col items-center relative">
                 <img className="w-[450px] absolute " src={iRiseLogoIcon} alt="" />
                 {/* crossing image in the */}
-                <div className="relative   w-[450px] h-[450px]">
+                <div className="relative sm:mt-0 -mt-10  w-[450px] h-[450px]">
                     {
                         ActiveSection === "Who we are" && (
                             <div>
-                                 <img style={{ animationDelay: "0s" }} className="w-[200px] absolute top-40 left-30 transform rotate-[15deg] rounded-md  transition-transform duration-500 ease-in-out opacity-0 animate-slide-in   "  src={ImageOne} alt="" /> 
-                                 <img style={{ animationDelay: "0.2s" }} className="w-[200px] absolute top-40 left-30 transform rotate-[45deg] rounded-md  transition-transform duration-500 ease-in-out opacity-0 animate-slide-in "  src={ImageTwo} alt="" /> 
-                                 <img style={{ animationDelay: "0.6s" }} className="w-[200px] absolute top-40 left-30 transform rotate-[30deg] rounded-md  transition-transform duration-500 ease-in-out opacity-0 animate-slide-in "  src={ImageFour} alt="" />
-                                 <img style={{ animationDelay: "0.4s" }} className="w-[200px] absolute top-40 left-30 transform rotate-[0deg] rounded-md  transition-transform duration-500 ease-in-out opacity-0 animate-slide-in"  src={ImageThree} alt="" /> 
+                                 <img style={{ animationDelay: "0s" }} className="sm:w-[200px] w-[160px] sm:ml-0 ml-5 sm:mt-0 mt-5 absolute top-40 left-30 transform rotate-[15deg] rounded-md  transition-transform duration-500 ease-in-out opacity-0 animate-slide-in   "  src={ImageOne} alt="" /> 
+                                 <img style={{ animationDelay: "0.2s" }} className="sm:w-[200px] w-[160px] sm:ml-0 ml-5 sm:mt-0 mt-5 absolute top-40 left-30 transform rotate-[45deg] rounded-md  transition-transform duration-500 ease-in-out opacity-0 animate-slide-in "  src={ImageTwo} alt="" /> 
+                                 <img style={{ animationDelay: "0.6s" }} className="sm:w-[200px] w-[160px] sm:ml-0 ml-5 sm:mt-0 mt-5 absolute top-40 left-30 transform rotate-[30deg] rounded-md  transition-transform duration-500 ease-in-out opacity-0 animate-slide-in "  src={ImageFour} alt="" />
+                                 <img style={{ animationDelay: "0.4s" }} className="sm:w-[200px] w-[160px] sm:ml-0 ml-5 sm:mt-0 mt-5 absolute top-40 left-30 transform rotate-[0deg] rounded-md  transition-transform duration-500 ease-in-out opacity-0 animate-slide-in"  src={ImageThree} alt="" /> 
                             </div>
                         )
                     }
                     {
                         ActiveSection === "What we do" && (
                             <div>
-                                 <img style={{ animationDelay: "0s" }} className="w-[200px] absolute top-40 left-30 transform rotate-[30deg] rounded-md  transition-transform duration-500 ease-in-out opacity-0 animate-slide-in"  src={ImageThree} alt="" /> 
-                                 <img style={{ animationDelay: "0.2s" }} className="w-[200px] absolute top-40 left-30 transform rotate-[45deg] rounded-md  transition-transform duration-500 ease-in-out opacity-0 animate-slide-in "  src={ImageTwo} alt="" /> 
-                                 <img style={{ animationDelay: "0.4s" }} className="w-[200px] absolute top-40 left-30 transform rotate-[15deg] rounded-md  transition-transform duration-500 ease-in-out opacity-0 animate-slide-in   "  src={ImageOne} alt="" /> 
-                                 <img style={{ animationDelay: "0.6s" }} className="w-[200px] absolute top-40 left-30 transform rotate-[00deg] rounded-md  transition-transform duration-500 ease-in-out opacity-0 animate-slide-in "  src={ImageFour} alt="" />
+                                 <img style={{ animationDelay: "0s" }} className="sm:w-[200px] w-[160px] sm:ml-0 ml-5 sm:mt-0 mt-5 absolute top-40 left-30 transform rotate-[30deg] rounded-md  transition-transform duration-500 ease-in-out opacity-0 animate-slide-in"  src={ImageThree} alt="" /> 
+                                 <img style={{ animationDelay: "0.2s" }} className="sm:w-[200px] w-[160px] sm:ml-0 ml-5 sm:mt-0 mt-5 absolute top-40 left-30 transform rotate-[45deg] rounded-md  transition-transform duration-500 ease-in-out opacity-0 animate-slide-in "  src={ImageTwo} alt="" /> 
+                                 <img style={{ animationDelay: "0.4s" }} className="sm:w-[200px] w-[160px] sm:ml-0 ml-5 sm:mt-0 mt-5 absolute top-40 left-30 transform rotate-[15deg] rounded-md  transition-transform duration-500 ease-in-out opacity-0 animate-slide-in   "  src={ImageOne} alt="" /> 
+                                 <img style={{ animationDelay: "0.6s" }} className="sm:w-[200px] w-[160px] sm:ml-0 ml-5 sm:mt-0 mt-5 absolute top-40 left-30 transform rotate-[00deg] rounded-md  transition-transform duration-500 ease-in-out opacity-0 animate-slide-in "  src={ImageFour} alt="" />
                             </div>
                         )
                     }
                     {
                         ActiveSection === "How we do it" && (
                             <div>
-                                 <img style={{ animationDelay: "0s" }} className="w-[200px] absolute top-40 left-30 transform rotate-[15deg] rounded-md   transition-transform duration-500 ease-in-out opacity-0 animate-slide-in  "  src={ImageOne} alt="" /> 
-                                 <img style={{ animationDelay: "0.2s" }} className="w-[200px] absolute top-40 left-30 transform rotate-[45deg] rounded-md   transition-transform duration-500 ease-in-out opacity-0 animate-slide-in"  src={ImageTwo} alt="" /> 
-                                 <img style={{ animationDelay: "0.4s" }} className="w-[200px] absolute top-40 left-30 transform rotate-[30deg] rounded-md   transition-transform duration-500 ease-in-out opacity-0 animate-slide-in"  src={ImageFour} alt="" />
-                                 <img style={{ animationDelay: "0.6s" }} className="w-[200px] absolute top-40 left-30 transform rotate-[0deg] rounded-md transition-transform duration-500 ease-in-out opacity-0 animate-slide-in"   src={ImageThree} alt="" /> 
+                                 <img style={{ animationDelay: "0s" }} className="sm:w-[200px] w-[160px] sm:ml-0 ml-5 sm:mt-0 mt-5 absolute top-40 left-30 transform rotate-[15deg] rounded-md   transition-transform duration-500 ease-in-out opacity-0 animate-slide-in  "  src={ImageOne} alt="" /> 
+                                 <img style={{ animationDelay: "0.2s" }} className="sm:w-[200px] w-[160px] sm:ml-0 ml-5 sm:mt-0 mt-5 absolute top-40 left-30 transform rotate-[45deg] rounded-md   transition-transform duration-500 ease-in-out opacity-0 animate-slide-in"  src={ImageTwo} alt="" /> 
+                                 <img style={{ animationDelay: "0.4s" }} className="sm:w-[200px] w-[160px] sm:ml-0 ml-5 sm:mt-0 mt-5 absolute top-40 left-30 transform rotate-[30deg] rounded-md   transition-transform duration-500 ease-in-out opacity-0 animate-slide-in"  src={ImageFour} alt="" />
+                                 <img style={{ animationDelay: "0.6s" }} className="sm:w-[200px] w-[160px] sm:ml-0 ml-5 sm:mt-0 mt-5 absolute top-40 left-30 transform rotate-[0deg] rounded-md transition-transform duration-500 ease-in-out opacity-0 animate-slide-in"   src={ImageThree} alt="" /> 
                             </div>
                         )
                     }

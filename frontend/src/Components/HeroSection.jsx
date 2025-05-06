@@ -11,7 +11,7 @@ function HeroSection (){
             <div className="relative w-full h-[550px]">
                 <video
                     className="absolute  left-0 w-full sm:h-full object-cover"src={iRisehubVideo} autoPlay loop muted playsInline>
-                </video>         
+                </video>
             </div>
             
         </div>

@@ -57,7 +57,6 @@ import Footer from "../Components/footer";
 import BookNow from "../Components/BookNow";
 import { useState } from "react";
 import OurCommunity from "../Components/OurCommunity";
-import SampleEco from "../Components/SampleEco";
 
 
 const testmonials = [
@@ -134,16 +133,12 @@ function Home (){
     
     return <div>
         <HeroSection />
-        <div className=" mt-60 sm:mt-[0px]  ">
+        <div>
             <BriefAboutiRise />
         </div>
-        {/* Sample Ecosystem code */}
-        {/* <SampleEco /> */}
-
-        {/* Impact NUmbers Section  */}
         <div className="bg-white pt-16 pb-[50px] w-full ">
             <div className="border-b-4 w-[210px] border-b-orange flex justify-center items-center mx-auto">
-                <h1 className="sm:text-[26px] text-center font-poppins text-orange text-[20px] font-semibold"> Impact Numbers </h1>
+                <h1 className="sm:text-[26px] text-center font-poppins text-orange text-[25px] font-semibold"> Impact Numbers </h1>
             </div>
             <div>
                 <Impacts />
@@ -188,11 +183,11 @@ function Home (){
                 <Testmonial />
             </div>
             {/* Our Community */}
-            <div className="w-full ">
+            <div className="">
                 <OurCommunity />
             </div>
             {/* Footer */}
-            <div className="sm:mt-[0px] mt-[800px] z-10 absolute w-full ">
+            <div className="sm:mt-[0px] z-10 absolute w-full ">
                 <Footer />
             </div>
         </div>

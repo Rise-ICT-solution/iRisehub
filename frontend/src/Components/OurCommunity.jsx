@@ -5,9 +5,8 @@ import ImageFour from "../Images/Home-Pages-images/AboutImages/image4.png"
 import iRiseLogoIcon from "../Images/Home-Pages-images/iRise-Logo Icon-Transparent.png"
 import CircleArrowImage from "../Images/Home-Pages-images/Circle-Arrow.png"
 import { useState, useEffect } from "react"
-function OurCommunity (){
-          
-    return <div className="w-full mt-39 bg-orange/10 items-center  p-10 flex justify-around ">
+function OurCommunity (){          
+    return <div className="w-full mt-39 bg-orange/10 items-center  p-10 sm:flex justify-around ">
         <div className="w-[250px]  ">
             <h1 className="text-4xl font-semibold font-poppins text-orange border-b-3 pb-6 text-center border-b-orange"> Join iRisehub Community</h1>
         </div>
