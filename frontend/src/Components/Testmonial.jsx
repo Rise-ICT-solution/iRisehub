@@ -19,6 +19,12 @@ const TestmonialData = [
         Name: "Ayaan Mire ",
         Description: "Dalbile will open up substantial opportunities, with access to corporate partners, investors and government collaborations through iRise Hub."
     },
+    {
+        Image: "https://img.freepik.com/free-photo/picture-elegant-young-fashion-man_158595-531.jpg?t=st=1746261183~exp=1746264783~hmac=413b10eb9551aad19ea8814da7ddb2bb5507eb2b90acc3b6dec2aace2132ffac&w=740",
+        title: "Developer",
+        Name: "Nurdin Osman",
+        Description: "Proud to be part of Dalbile Bootcamp — a unique Somali initiative driving innovation and youth empowerment."
+    },
 ]
 function Testmonial (){
     const [testmonials, setTestmonials] = useState(TestmonialData)
@@ -41,7 +47,7 @@ function Testmonial (){
             <div className="flex gap-5 ">
                 {
                     testmonials.map((item, index) => (
-                        <div key={index} onMouseEnter={() => HandleHoverImage(index)} className={` group ${index === 0 ? "w-[400px]" : "w-[180px]"}  relative h-[450px]`}>
+                        <div key={index} onMouseEnter={() => HandleHoverImage(index)} className={` group ${index === 0 ? "w-[400px]" : "w-[120px]"}  relative h-[450px]`}>
                             <img className=" object-cover rounded-[10px] object-center absolute h-full w-full" src={item.Image} alt={item.Image} />
                             {/* <div className=" absolute ml-10 leading-6 flex-col  bottom-16 w-full">
                             </div> */}
@@ -52,14 +58,7 @@ function Testmonial (){
                         </div>
                     ))
                 }
-                {/* <div className="w-[180px]  relative h-[450px]">
-                    <img className=" object-cover rounded-[10px] object-center absolute h-full w-full" src="https://img.freepik.com/free-photo/medium-shot-male-flight-attendant-posing_23-2150312701.jpg?t=st=1740946881~exp=1740950481~hmac=2883ea9221f37dd7ac8d45eeffae8ec4aabe33ca892fa3b6794e87429c160487&w=740" alt="" />
-                    <h1 className="absolute bottom-16 -right-6 transform rotate-270 text-white font-poppins text-[20px]"> AbdiNair Ise </h1>
-                </div>
-                <div className="w-[180px]  relative h-[450px]">
-                    <img className=" object-cover rounded-[10px] object-center absolute h-full w-full" src="https://img.freepik.com/free-photo/happy-confident-female-professional_1262-21130.jpg?uid=R24839574&ga=GA1.1.338947751.1707332523&semt=ais_hybrid" alt="" />
-                    <h1 className="absolute bottom-16 -right-6 transform rotate-270 text-white font-poppins text-[20px]"> Maria Bakar </h1>
-                </div> */}
+
             </div>
         </div>
     </div>

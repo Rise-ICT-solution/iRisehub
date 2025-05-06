@@ -4,7 +4,7 @@ import ImageTwo from "../Images/Home-Pages-images/AboutImages/image2.png"
 import ImageThree from "../Images/Home-Pages-images/AboutImages/image3.png"
 import ImageFour from "../Images/Home-Pages-images/AboutImages/image4.png"
 import ImageFive from "../Images/Home-Pages-images/AboutImages/image5.png"
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 function BriefAboutiRise (){
     const [ActiveSection, setActiveSection] = useState("Who we are")
     const Sections = {

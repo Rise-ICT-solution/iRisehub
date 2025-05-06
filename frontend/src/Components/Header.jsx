@@ -82,12 +82,14 @@ function Header (){
                 {/* The Huge irisehub Text  */}
                 <h1 className={`transition-all duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[130px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "} `}> {'<irisehub>'} </h1>
                 {/* <TextSlider /> */}
-                {/* <h1 className={`transition-all flex justify-center items-center duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[130px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "} `}> 
-                
-                    <span className={`transition-all duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[10px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "}`}>{`<`}</span>
-                    <span className={`transition-all duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[10px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "}`}> {'irisehub'} </span>
-                    <span className={`transition-all duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[10px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "}`}>{`>`} </span>
-                </h1> */}
+                {/* <div>
+                    <h1 className={`transition-all flex justify-center items-center duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[130px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "} `}> 
+                    
+                        <span className={`transition-all duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[10px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "}`}>{`<`}</span>
+                        <span className={`transition-all duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[10px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "}`}> {'irisehub'} </span>
+                        <span className={`transition-all duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[10px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "}`}>{`>`} </span>
+                    </h1>
+                </div> */}
             </div>
         </div>
         
