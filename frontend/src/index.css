@@ -5,6 +5,10 @@
     --color-orange: #EC4D01;
     /* ... */
   }
+  /* Si guud u isticmaal farta poppins  */
+  * {
+    font-family: var(--font-poppins);
+  }
 
 /* Waa scrolling ka ay partners samenayan  */
   @keyframes scroll {

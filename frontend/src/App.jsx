@@ -3,6 +3,7 @@ import Home from "./Pages/Home";
 import News from "./Pages/Community Pages/News"
 import Events from "./Pages/Community Pages/Events"
 import Header from "./Components/Header";
+import MogadishuTechSummit from "./Pages/Ecosystem-Pages/MogadishuTechSummit";
 // import TestPages from "./Pages/Testing";
 function App (){ 
   return <Routes>
@@ -10,6 +11,7 @@ function App (){
     <Route path="/news" element={<News />} />
     <Route path="/events" element={<Events />} />
     <Route path="/header" element={<Header />} />
+    <Route path="/mogadishuTech" element={<MogadishuTechSummit />} />
 
     {/* <Route path="/test" element={<TestPages />} /> This page line is only for testing */}
   </Routes>

@@ -10,9 +10,12 @@ import { AiOutlineDoubleRight } from "react-icons/ai";
 import { useState, useEffect, useRef } from "react";
 import {Link} from "react-router-dom";
 import TextSlider from "./textslidery";
+//wuxuu kaa cawina inaad shey xadido si uu ugu soo muuqdo meelo gaar ah oo aad adiga u xadiday
+import { useLocation } from "react-router-dom";
 
 
 function Header (){
+    const location = useLocation()
     const menuRef = useRef()
     const [ IsMenuOpen, setIsMenuOpen] = useState(false)
     const [IsHeaderOpen, setIsHeaderOpen] = useState(false)
@@ -80,21 +83,16 @@ function Header (){
                     <Link to="/" ><img className={`w-[200px] sm:ml-[-30px] -ml-4 h-[150px] sm:h-[140px] transition-all duration-500   `} src={iRisehubLogo} alt="iRisehub Logo" /></Link>
                     <h1 style={{display: IsMenuOpen == true  ? "none" : ""}} onClick={MenuOpen} className={`bg-orange px-[10px] text-white py-[5px]  font-semibold hover:underline `}> Menu </h1>
                 </div>
-                {/* The Huge irisehub Text  */}
-                <h1 className={`transition-all duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[70px]  sm:text-[220px]  sm:mt-[130px] ml-[-10px] sm:ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "} `}> {'<irisehub>'} </h1>
-                {/* <TextSlider /> */}
-                {/* <div>
-                    <h1 className={`transition-all flex justify-center items-center duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[130px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "} `}> 
-                    
-                        <span className={`transition-all duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[10px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "}`}>{`<`}</span>
-                        <span className={`transition-all duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[10px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "}`}> {'irisehub'} </span>
-                        <span className={`transition-all duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[220px] mt-[10px] ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "}`}>{`>`} </span>
-                    </h1>
-                </div> */}
+                {/* location kan wuxuu xadidaa in irisehub huge text uu keliya kasoo mooqdo home page ka pages ka kalana uusan kaso muuqan */}
+                {location.pathname === "/" && <div>
+                    {/* The Huge irisehub Text  */}
+                    <h1 className={`transition-all duration-1000 text-white  font-bold ${logoSize === "large" ? "text-[70px]  sm:text-[220px]  sm:mt-[130px] ml-[-10px] sm:ml-[-15px] " : "text-[25px] opacity-0 ml-[500px] absolute  top-4 text-center "} `}> {'<irisehub>'} </h1>
+                </div>
+                }
             </div>
         </div>
         
-        {/* Desktop Menu ---------------> FIxed-ka ka saar sm */}
+        {/* Desktop Menu */}
         <div style={{display: IsMenuOpen == true ? "block" : "none"}} className={`w-full left-0 h-full fixed z-20 top-0  transition-transform duration-500 ease-in-out ${ IsMenuOpen ? "-translate-x-0" : "translate-x-full"} bg-black/80`}>
             <div   ref={menuRef} className={`sm:w-[400px] w-full right-0 sm:fixed h-screen z-30 bg-orange  transition-transform duration-500 ease-in-out ${IsMenuOpen ? "translate-y-0" : "-translate-x-full"}`} style={{right:0}}>
                 <div className=" h-full overflow-y-auto">
@@ -120,7 +118,7 @@ function Header (){
                                 <li className=" w-[250px] hover:underline border-white"> Rise Solution </li>
                                 <li className=" w-[250px] hover:underline border-white"> Minbar </li>
                                 <li className=" w-[250px] hover:underline border-white"> Kobciye </li>
-                                <li className=" w-[250px] hover:underline border-white"> Mogadishu Tech Summit </li>
+                                <Link to="/mogadishuTech" > <li className=" w-[250px] hover:underline border-white"> Mogadishu Tech Summit </li></Link>
                                 <li className=" w-[250px] hover:underline border-white"> TVET </li>
                                 <li className=" w-[250px] hover:underline border-white"> IFFS </li>
                             </ul>
