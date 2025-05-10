@@ -5,6 +5,7 @@ import Section3Image from "../../Images/Ecosystem-Images/MogadishuTechSummit/Ima
 import SummitSectionFourOne from "../../Images/Ecosystem-Images/MogadishuTechSummit/Summit_Section4.jpg"
 import SummitSectionFive from "../../Images/Ecosystem-Images/MogadishuTechSummit/Summit_Section5.jpg"
 import Footer from "../../Components/Footer";
+import { IoLogoYoutube } from "react-icons/io";
 function MogadishuTechSummit() {
   return <div className="">
     {/* Herosection */}
@@ -34,9 +35,11 @@ function MogadishuTechSummit() {
     <div className="mt-30">
       <h1 className="text-center text-3xl font-semibold"> Mogadishu Tech Summit </h1>
       <div className="mt-12 flex justify-center relative gap-10 items-center">
+        <img className="w-[330px] relative h-[230px] object-cover rounded-[15px]" src={SummitSectionFourOne} alt="" />
+        <IoLogoYoutube className="text-white -ml-190 absolute text-2xl w-10 h-10" />
         <img className="w-[330px] h-[230px] object-cover rounded-[15px]" src={SummitSectionFourOne} alt="" />
         <img className="w-[330px] h-[230px] object-cover rounded-[15px]" src={SummitSectionFourOne} alt="" />
-        <img className="w-[330px] h-[230px] object-cover rounded-[15px]" src={SummitSectionFourOne} alt="" />
+        <IoLogoYoutube className="text-white ml-185 absolute text-2xl w-10 h-10" />
       </div>
     </div>
     {/* Section 5 */}
@@ -47,8 +50,9 @@ function MogadishuTechSummit() {
       <p className="w-[850px] mt-8"> Did you miss our latest Mogadishu Tech summit 2021? No worries, we got it all covered, we’ve got your recap right here! #MTS2021. see next year at #MTS2022.      </p>
     </div>
     {/* Section 6 */}
-    <div className="w-full mt-10">
-      <img className="w-[600px] rounded-[10px] ml-20 h-[400px]" src={SummitSectionFive} alt="" />
+    <div className="w-full relative mt-10">
+      <img className="w-[600px] rounded-[10px]  ml-20 h-[400px]" src={SummitSectionFive} alt="" />
+      <IoLogoYoutube className="text-white absolute w-15 -mt-60 ml-85 h-15  h-10" />
     </div>
 
     {/* Section 7 */}
