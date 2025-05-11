@@ -117,7 +117,10 @@ function Header (){
                                 <li className=" w-[250px] hover:underline border-white"> Rise Academy </li>
                                 <li className=" w-[250px] hover:underline border-white"> Rise Solution </li>
                                 <li className=" w-[250px] hover:underline border-white"> Minbar </li>
-                                <li className=" w-[250px] hover:underline border-white"> Kobciye </li>
+                                {/* Check kobciye by arman */}
+                                <Link to="/kobciye" >
+                                <li className=" w-[250px] hover:underline border-white"> Kobciye By Arm </li>
+                                </Link>
                                 <Link to="/mogadishuTech" > <li className=" w-[250px] hover:underline border-white"> Mogadishu Tech Summit </li></Link>
                                 <li className=" w-[250px] hover:underline border-white"> TVET </li>
                                 <li className=" w-[250px] hover:underline border-white"> IFFS </li>
