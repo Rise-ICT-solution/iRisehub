@@ -1,5 +1,7 @@
 import HeroSection from "../../Components/HeroSection";
 import Footer from "../../Components/footer";
+import KobciImage from "../../Images/kobci.jpg";
+
 function Kobciye() {
   return (
     <div>
@@ -32,12 +34,11 @@ function Kobciye() {
         <div
   className="bg-cover bg-center mt-3 h-[250px] w-full relative flex items-center justify-center"
   style={{
-    backgroundImage: `linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(103, 255, 115, 0.2)), url("https://images.pexels.com/photos/29634785/pexels-photo-29634785/free-photo-of-joyful-portrait-of-three-african-women-in-hijabs.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")`,
+    backgroundImage: `linear-gradient(to left, rgba(103, 255, 115, 0.3), rgba(103, 255, 115, 0.3)), url(${KobciImage})`,
   }}
 >
-  <div className="text-center text-white">
-    
-    <p className="text-lg">a socio-economic program that rides on the sole objective of investing Somali youth with skills and resources.</p>
+  <div className="text-center text-white relative z-10">
+    <p className="text-lg">a socio-economic program that rides on the sole objective of investing Somali youth with skills and resources.</p>
   </div>
 </div>
 
@@ -51,7 +52,7 @@ function Kobciye() {
           </p>
         </div>
         <div className="mt-12">
-          <p className="text-2xl">We <span className="text-green-700 font-bold">Empower </span>Entrepreneurs with Knowledge and Investment</p>
+          <p className="text-2xl">We <span className="text-green-700 font-bold">Empower</span>Entrepreneurs with Knowledge and Investment</p>
         </div>
 
         <div>
@@ -72,7 +73,7 @@ function Kobciye() {
     <h1 className="text-2xl font-bold">Reach Us!</h1>
     <h1 className="text-3xl mt-2 font-bold">Let's Talk</h1>
     <p className="mt-3">
-      Connect with us and find out how our entrepreneurial skill-building and youth
+      Connect with us and find out how our entrepreneurial skill-building and youth
       engagement programs in Somalia can help you deliver impact.
     </p>
   </div>
