@@ -30,12 +30,15 @@ function Kobciye() {
         </p>
 
         <div
-  className="bg-cover bg-center mt-3 h-[200px] sm:h-[250px] md:h-[300px] lg:h-[200px] xl:h-[500px] w-full"
+  className="bg-cover bg-center mt-3 h-[250px] w-full relative flex items-center justify-center"
   style={{
-    backgroundImage: `linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(103, 255, 115, 0.99)), url("https://images.pexels.com/photos/29634785/pexels-photo-29634785/free-photo-of-joyful-portrait-of-three-african-women-in-hijabs.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")`,
+    backgroundImage: `linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(103, 255, 115, 0.2)), url("https://images.pexels.com/photos/29634785/pexels-photo-29634785/free-photo-of-joyful-portrait-of-three-african-women-in-hijabs.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")`,
   }}
 >
-  {/* Waxaad ku dari kartaa qoraal ama button halkan dhexdiisa */}
+  <div className="text-center text-white">
+    
+    <p className="text-lg">a socio-economic program that rides on the sole objective of investing Somali youth with skills and resources.</p>
+  </div>
 </div>
 
 
